@@ -14,6 +14,7 @@ namespace Hotel_management_system
         [STAThread]
         static void Main()
         {
+            if (true) { }
 
             if (Environment.OSVersion.Version.Major >= 6)
                 SetProcessDPIAware();
