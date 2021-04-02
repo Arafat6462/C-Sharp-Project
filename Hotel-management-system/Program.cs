@@ -8,7 +8,7 @@ namespace Hotel_management_system
 {
     static class Program
     {
-        /// <summary>
+        /// <summary>rafardous
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
