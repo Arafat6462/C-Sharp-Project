@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hotel_management_system
+namespace Project_X
 {
     static class Program
     {
@@ -14,7 +14,6 @@ namespace Hotel_management_system
         [STAThread]
         static void Main()
         {
-
             if (Environment.OSVersion.Version.Major >= 6)
                 SetProcessDPIAware();
 
