@@ -17,10 +17,5 @@ namespace Project_X
             InitializeComponent();
         }
 
-        private void btn_theme_light_Click(object sender, EventArgs e)
-        {
-            AdminControllerDashboard adminControllerDashboard = new AdminControllerDashboard();
-            adminControllerDashboard.ChangeDashboardTheme("#C1D8F9", "#D7F1FE", "#C1D8F9");
-        }
     }
 }

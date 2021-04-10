@@ -37,6 +37,7 @@ namespace Project_X
             this.sidebarShow = new Guna.UI2.WinForms.Guna2CircleButton();
             this.sidebarHide = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.btn_Theme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_settings = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -52,6 +53,15 @@ namespace Project_X
             this.btn_minimize = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn_exit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.colorThemePanel = new System.Windows.Forms.Panel();
+            this.btn_theme_green = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_theme_red = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_theme_purple = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_theme_gray = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_theme_blue = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_theme_yellow = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_theme_light = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.DefaultTheme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse_Settings = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uc_settings1 = new Project_X.Uc_settings();
             this.leftPanel.SuspendLayout();
@@ -61,6 +71,7 @@ namespace Project_X
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            this.colorThemePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // leftPanel
@@ -70,6 +81,7 @@ namespace Project_X
             this.leftPanel.Controls.Add(this.sidebarShow);
             this.leftPanel.Controls.Add(this.sidebarHide);
             this.leftPanel.Controls.Add(this.guna2Separator1);
+            this.leftPanel.Controls.Add(this.btn_Theme);
             this.leftPanel.Controls.Add(this.btn_settings);
             this.leftPanel.Controls.Add(this.guna2GradientButton6);
             this.leftPanel.Controls.Add(this.guna2GradientButton5);
@@ -164,6 +176,32 @@ namespace Project_X
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(240, 10);
             this.guna2Separator1.TabIndex = 4;
+            // 
+            // btn_Theme
+            // 
+            this.btn_Theme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_Theme.CheckedState.Parent = this.btn_Theme;
+            this.btn_Theme.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_Theme.CustomImages.Image")));
+            this.btn_Theme.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Theme.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_Theme.CustomImages.Parent = this.btn_Theme;
+            this.guna2Transition1.SetDecoration(this.btn_Theme, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Theme.FillColor = System.Drawing.Color.Empty;
+            this.btn_Theme.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_Theme.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Theme.ForeColor = System.Drawing.Color.White;
+            this.btn_Theme.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_Theme.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_Theme.HoverState.Parent = this.btn_Theme;
+            this.btn_Theme.Location = new System.Drawing.Point(0, 758);
+            this.btn_Theme.Name = "btn_Theme";
+            this.btn_Theme.ShadowDecoration.Parent = this.btn_Theme;
+            this.btn_Theme.Size = new System.Drawing.Size(243, 65);
+            this.btn_Theme.TabIndex = 3;
+            this.btn_Theme.Text = "Theme";
+            this.btn_Theme.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Theme.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Theme.Click += new System.EventHandler(this.btn_Theme_Click);
             // 
             // btn_settings
             // 
@@ -337,11 +375,11 @@ namespace Project_X
             // 
             // logoPanel
             // 
-            this.logoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(82)))), ((int)(((byte)(103)))));
+            this.logoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.logoPanel.Controls.Add(this.logoPicture);
             this.logoPanel.Controls.Add(this.label1);
             this.guna2Transition1.SetDecoration(this.logoPanel, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.logoPanel.Location = new System.Drawing.Point(-1, -1);
+            this.logoPanel.Location = new System.Drawing.Point(0, 0);
             this.logoPanel.Name = "logoPanel";
             this.logoPanel.Size = new System.Drawing.Size(244, 60);
             this.logoPanel.TabIndex = 0;
@@ -380,7 +418,7 @@ namespace Project_X
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(243, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1393, 60);
+            this.topPanel.Size = new System.Drawing.Size(1464, 60);
             this.topPanel.TabIndex = 1;
             // 
             // btn_maximize
@@ -389,7 +427,7 @@ namespace Project_X
             this.btn_maximize.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.btn_maximize, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btn_maximize.Image = ((System.Drawing.Image)(resources.GetObject("btn_maximize.Image")));
-            this.btn_maximize.Location = new System.Drawing.Point(1246, 12);
+            this.btn_maximize.Location = new System.Drawing.Point(1317, 12);
             this.btn_maximize.Name = "btn_maximize";
             this.btn_maximize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_maximize.ShadowDecoration.Parent = this.btn_maximize;
@@ -408,7 +446,7 @@ namespace Project_X
             this.btn_minimize.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.btn_minimize, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btn_minimize.Image = ((System.Drawing.Image)(resources.GetObject("btn_minimize.Image")));
-            this.btn_minimize.Location = new System.Drawing.Point(1287, 12);
+            this.btn_minimize.Location = new System.Drawing.Point(1358, 12);
             this.btn_minimize.Name = "btn_minimize";
             this.btn_minimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_minimize.ShadowDecoration.Parent = this.btn_minimize;
@@ -427,7 +465,7 @@ namespace Project_X
             this.btn_exit.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.btn_exit, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
-            this.btn_exit.Location = new System.Drawing.Point(1328, 12);
+            this.btn_exit.Location = new System.Drawing.Point(1399, 12);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_exit.ShadowDecoration.Parent = this.btn_exit;
@@ -461,6 +499,192 @@ namespace Project_X
             this.guna2Transition1.DefaultAnimation = animation1;
             this.guna2Transition1.TimeStep = 0.03F;
             // 
+            // colorThemePanel
+            // 
+            this.colorThemePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorThemePanel.BackColor = System.Drawing.Color.Transparent;
+            this.colorThemePanel.Controls.Add(this.btn_theme_green);
+            this.colorThemePanel.Controls.Add(this.btn_theme_red);
+            this.colorThemePanel.Controls.Add(this.btn_theme_purple);
+            this.colorThemePanel.Controls.Add(this.btn_theme_gray);
+            this.colorThemePanel.Controls.Add(this.btn_theme_blue);
+            this.colorThemePanel.Controls.Add(this.btn_theme_yellow);
+            this.colorThemePanel.Controls.Add(this.btn_theme_light);
+            this.colorThemePanel.Controls.Add(this.DefaultTheme);
+            this.guna2Transition1.SetDecoration(this.colorThemePanel, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.colorThemePanel.Location = new System.Drawing.Point(243, 60);
+            this.colorThemePanel.Name = "colorThemePanel";
+            this.colorThemePanel.Size = new System.Drawing.Size(1464, 834);
+            this.colorThemePanel.TabIndex = 3;
+            // 
+            // btn_theme_green
+            // 
+            this.btn_theme_green.BorderRadius = 15;
+            this.btn_theme_green.BorderThickness = 1;
+            this.btn_theme_green.CheckedState.Parent = this.btn_theme_green;
+            this.btn_theme_green.CustomImages.Parent = this.btn_theme_green;
+            this.guna2Transition1.SetDecoration(this.btn_theme_green, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_theme_green.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
+            this.btn_theme_green.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.btn_theme_green.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_theme_green.ForeColor = System.Drawing.Color.White;
+            this.btn_theme_green.HoverState.Parent = this.btn_theme_green;
+            this.btn_theme_green.Location = new System.Drawing.Point(751, 301);
+            this.btn_theme_green.Name = "btn_theme_green";
+            this.btn_theme_green.ShadowDecoration.Parent = this.btn_theme_green;
+            this.btn_theme_green.Size = new System.Drawing.Size(180, 45);
+            this.btn_theme_green.TabIndex = 11;
+            this.btn_theme_green.Text = "Green";
+            this.btn_theme_green.Click += new System.EventHandler(this.btn_theme_green_Click);
+            // 
+            // btn_theme_red
+            // 
+            this.btn_theme_red.BorderColor = System.Drawing.Color.Red;
+            this.btn_theme_red.BorderRadius = 15;
+            this.btn_theme_red.BorderThickness = 1;
+            this.btn_theme_red.CheckedState.Parent = this.btn_theme_red;
+            this.btn_theme_red.CustomImages.Parent = this.btn_theme_red;
+            this.guna2Transition1.SetDecoration(this.btn_theme_red, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_theme_red.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.btn_theme_red.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(97)))), ((int)(((byte)(85)))));
+            this.btn_theme_red.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_theme_red.ForeColor = System.Drawing.Color.White;
+            this.btn_theme_red.HoverState.Parent = this.btn_theme_red;
+            this.btn_theme_red.Location = new System.Drawing.Point(751, 441);
+            this.btn_theme_red.Name = "btn_theme_red";
+            this.btn_theme_red.ShadowDecoration.Parent = this.btn_theme_red;
+            this.btn_theme_red.Size = new System.Drawing.Size(180, 45);
+            this.btn_theme_red.TabIndex = 11;
+            this.btn_theme_red.Text = "Red";
+            this.btn_theme_red.Click += new System.EventHandler(this.btn_theme_red_Click);
+            // 
+            // btn_theme_purple
+            // 
+            this.btn_theme_purple.BorderColor = System.Drawing.Color.Purple;
+            this.btn_theme_purple.BorderRadius = 15;
+            this.btn_theme_purple.BorderThickness = 1;
+            this.btn_theme_purple.CheckedState.Parent = this.btn_theme_purple;
+            this.btn_theme_purple.CustomImages.Parent = this.btn_theme_purple;
+            this.guna2Transition1.SetDecoration(this.btn_theme_purple, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_theme_purple.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btn_theme_purple.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(30)))), ((int)(((byte)(120)))));
+            this.btn_theme_purple.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_theme_purple.ForeColor = System.Drawing.Color.White;
+            this.btn_theme_purple.HoverState.Parent = this.btn_theme_purple;
+            this.btn_theme_purple.Location = new System.Drawing.Point(751, 371);
+            this.btn_theme_purple.Name = "btn_theme_purple";
+            this.btn_theme_purple.ShadowDecoration.Parent = this.btn_theme_purple;
+            this.btn_theme_purple.Size = new System.Drawing.Size(180, 45);
+            this.btn_theme_purple.TabIndex = 11;
+            this.btn_theme_purple.Text = "Purple";
+            this.btn_theme_purple.Click += new System.EventHandler(this.btn_theme_purple_Click);
+            // 
+            // btn_theme_gray
+            // 
+            this.btn_theme_gray.BorderColor = System.Drawing.Color.White;
+            this.btn_theme_gray.BorderRadius = 15;
+            this.btn_theme_gray.BorderThickness = 1;
+            this.btn_theme_gray.CheckedState.Parent = this.btn_theme_gray;
+            this.btn_theme_gray.CustomImages.Parent = this.btn_theme_gray;
+            this.guna2Transition1.SetDecoration(this.btn_theme_gray, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_theme_gray.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.btn_theme_gray.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btn_theme_gray.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_theme_gray.ForeColor = System.Drawing.Color.White;
+            this.btn_theme_gray.HoverState.Parent = this.btn_theme_gray;
+            this.btn_theme_gray.Location = new System.Drawing.Point(751, 511);
+            this.btn_theme_gray.Name = "btn_theme_gray";
+            this.btn_theme_gray.ShadowDecoration.Parent = this.btn_theme_gray;
+            this.btn_theme_gray.Size = new System.Drawing.Size(180, 45);
+            this.btn_theme_gray.TabIndex = 11;
+            this.btn_theme_gray.Text = "Gray";
+            this.btn_theme_gray.Click += new System.EventHandler(this.btn_theme_gray_Click);
+            // 
+            // btn_theme_blue
+            // 
+            this.btn_theme_blue.BorderColor = System.Drawing.Color.Cyan;
+            this.btn_theme_blue.BorderRadius = 15;
+            this.btn_theme_blue.BorderThickness = 1;
+            this.btn_theme_blue.CheckedState.Parent = this.btn_theme_blue;
+            this.btn_theme_blue.CustomImages.Parent = this.btn_theme_blue;
+            this.guna2Transition1.SetDecoration(this.btn_theme_blue, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_theme_blue.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(79)))), ((int)(((byte)(114)))));
+            this.btn_theme_blue.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(113)))), ((int)(((byte)(163)))));
+            this.btn_theme_blue.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_theme_blue.ForeColor = System.Drawing.Color.White;
+            this.btn_theme_blue.HoverState.Parent = this.btn_theme_blue;
+            this.btn_theme_blue.Location = new System.Drawing.Point(520, 511);
+            this.btn_theme_blue.Name = "btn_theme_blue";
+            this.btn_theme_blue.ShadowDecoration.Parent = this.btn_theme_blue;
+            this.btn_theme_blue.Size = new System.Drawing.Size(180, 45);
+            this.btn_theme_blue.TabIndex = 12;
+            this.btn_theme_blue.Text = "Blue";
+            this.btn_theme_blue.Click += new System.EventHandler(this.btn_theme_blue_Click);
+            // 
+            // btn_theme_yellow
+            // 
+            this.btn_theme_yellow.BorderColor = System.Drawing.Color.Orange;
+            this.btn_theme_yellow.BorderRadius = 15;
+            this.btn_theme_yellow.BorderThickness = 1;
+            this.btn_theme_yellow.CheckedState.Parent = this.btn_theme_yellow;
+            this.btn_theme_yellow.CustomImages.Parent = this.btn_theme_yellow;
+            this.guna2Transition1.SetDecoration(this.btn_theme_yellow, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_theme_yellow.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(84)))), ((int)(((byte)(0)))));
+            this.btn_theme_yellow.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(196)))), ((int)(((byte)(113)))));
+            this.btn_theme_yellow.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_theme_yellow.ForeColor = System.Drawing.Color.White;
+            this.btn_theme_yellow.HoverState.Parent = this.btn_theme_yellow;
+            this.btn_theme_yellow.Location = new System.Drawing.Point(520, 441);
+            this.btn_theme_yellow.Name = "btn_theme_yellow";
+            this.btn_theme_yellow.ShadowDecoration.Parent = this.btn_theme_yellow;
+            this.btn_theme_yellow.Size = new System.Drawing.Size(180, 45);
+            this.btn_theme_yellow.TabIndex = 13;
+            this.btn_theme_yellow.Text = "Yellow";
+            this.btn_theme_yellow.Click += new System.EventHandler(this.btn_theme_yellow_Click);
+            // 
+            // btn_theme_light
+            // 
+            this.btn_theme_light.BorderColor = System.Drawing.Color.Pink;
+            this.btn_theme_light.BorderRadius = 15;
+            this.btn_theme_light.BorderThickness = 1;
+            this.btn_theme_light.CheckedState.Parent = this.btn_theme_light;
+            this.btn_theme_light.CustomImages.Parent = this.btn_theme_light;
+            this.guna2Transition1.SetDecoration(this.btn_theme_light, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_theme_light.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(208)))), ((int)(((byte)(246)))));
+            this.btn_theme_light.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(254)))));
+            this.btn_theme_light.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_theme_light.ForeColor = System.Drawing.Color.White;
+            this.btn_theme_light.HoverState.Parent = this.btn_theme_light;
+            this.btn_theme_light.Location = new System.Drawing.Point(520, 371);
+            this.btn_theme_light.Name = "btn_theme_light";
+            this.btn_theme_light.ShadowDecoration.Parent = this.btn_theme_light;
+            this.btn_theme_light.Size = new System.Drawing.Size(180, 45);
+            this.btn_theme_light.TabIndex = 14;
+            this.btn_theme_light.Text = "Light";
+            this.btn_theme_light.Click += new System.EventHandler(this.btn_theme_light_Click);
+            // 
+            // DefaultTheme
+            // 
+            this.DefaultTheme.BorderRadius = 15;
+            this.DefaultTheme.BorderThickness = 1;
+            this.DefaultTheme.CheckedState.Parent = this.DefaultTheme;
+            this.DefaultTheme.CustomImages.Parent = this.DefaultTheme;
+            this.guna2Transition1.SetDecoration(this.DefaultTheme, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.DefaultTheme.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.DefaultTheme.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(124)))), ((int)(((byte)(133)))));
+            this.DefaultTheme.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DefaultTheme.ForeColor = System.Drawing.Color.White;
+            this.DefaultTheme.HoverState.Parent = this.DefaultTheme;
+            this.DefaultTheme.Location = new System.Drawing.Point(520, 301);
+            this.DefaultTheme.Name = "DefaultTheme";
+            this.DefaultTheme.ShadowDecoration.Parent = this.DefaultTheme;
+            this.DefaultTheme.Size = new System.Drawing.Size(180, 45);
+            this.DefaultTheme.TabIndex = 15;
+            this.DefaultTheme.Text = "Default";
+            this.DefaultTheme.Click += new System.EventHandler(this.DefaultTheme_Click);
+            // 
             // guna2Elipse_Settings
             // 
             this.guna2Elipse_Settings.BorderRadius = 0;
@@ -470,18 +694,19 @@ namespace Project_X
             this.uc_settings1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.uc_settings1.BackColor = System.Drawing.Color.Gray;
+            this.uc_settings1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.uc_settings1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_settings1.Location = new System.Drawing.Point(243, 61);
+            this.uc_settings1.Location = new System.Drawing.Point(243, 60);
             this.uc_settings1.Name = "uc_settings1";
-            this.uc_settings1.Size = new System.Drawing.Size(1411, 881);
+            this.uc_settings1.Size = new System.Drawing.Size(1464, 834);
             this.uc_settings1.TabIndex = 2;
             // 
             // AdminControllerDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(124)))), ((int)(((byte)(133)))));
-            this.ClientSize = new System.Drawing.Size(1636, 894);
+            this.ClientSize = new System.Drawing.Size(1707, 894);
+            this.Controls.Add(this.colorThemePanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.uc_settings1);
@@ -501,6 +726,7 @@ namespace Project_X
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            this.colorThemePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -529,5 +755,15 @@ namespace Project_X
         private Guna.UI2.WinForms.Guna2CirclePictureBox btn_minimize;
         private Guna.UI2.WinForms.Guna2CirclePictureBox btn_exit;
         private Uc_settings uc_settings1;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Theme;
+        private System.Windows.Forms.Panel colorThemePanel;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_theme_gray;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_theme_blue;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_theme_yellow;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_theme_light;
+        private Guna.UI2.WinForms.Guna2GradientButton DefaultTheme;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_theme_purple;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_theme_green;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_theme_red;
     }
 }
