@@ -34,12 +34,14 @@ namespace Project_X
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            uC_AddRoom1.Visible = true;
+            uC_AddRoom1.BringToFront();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            uC_CustomerCheckOut1.Visible = true;
+            uC_CustomerCheckOut1.BringToFront();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -60,6 +62,16 @@ namespace Project_X
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void uC_CustomerCheckOut1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_CustomerCheckOut1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
