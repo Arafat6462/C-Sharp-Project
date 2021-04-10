@@ -58,8 +58,81 @@ namespace Project_X
         // change theme.
         private void btn_settings_Click(object sender, EventArgs e)
         {
-            leftPanel.BackColor = ColorTranslator.FromHtml("#728F9D");
-            this.BackColor = ColorTranslator.FromHtml("#E3E3E3");
+            
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        // check condition for maximize and normal both mode
+        private void btn_maximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+
+            else if (this.WindowState == FormWindowState.Maximized)
+                this.WindowState = FormWindowState.Normal;
+        }
+
+
+
+
+
+
+
+
+
+
+        // change the themes :)
+        public void ChangeDashboardTheme(string leftPanelColor, string bodyPanelColor, string topPanelColor)
+        {
+            leftPanel.BackColor = ColorTranslator.FromHtml(leftPanelColor);
+            this.BackColor = ColorTranslator.FromHtml(bodyPanelColor);
+
+        }
+
+
+        // focus on coursore move.
+        private void btn_exit_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.btn_exit.Size = new System.Drawing.Size(35, 35);
+        }
+
+        private void btn_exit_MouseLeave(object sender, EventArgs e)
+        {
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+        }
+
+        private void btn_minimize_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.btn_minimize.Size = new System.Drawing.Size(35, 35);
+        }
+
+        private void btn_minimize_MouseLeave(object sender, EventArgs e)
+        {
+            this.btn_minimize.Size = new System.Drawing.Size(30, 30);
+        }
+
+        private void btn_maximize_MouseLeave(object sender, EventArgs e)
+        {
+            this.btn_maximize.Size = new System.Drawing.Size(30, 30);
+        }
+
+        private void btn_maximize_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.btn_maximize.Size = new System.Drawing.Size(35, 35);
+        }
+
+        private void btn_exit_MouseHover(object sender, EventArgs e)
+        {
+
         }
     }
 }

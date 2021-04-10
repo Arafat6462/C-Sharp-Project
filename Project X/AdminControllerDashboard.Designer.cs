@@ -31,7 +31,7 @@ namespace Project_X
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminControllerDashboard));
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             this.leftPanel = new System.Windows.Forms.Panel();
             this.guna2GradientButton8 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.sidebarShow = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -48,7 +48,9 @@ namespace Project_X
             this.logoPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btn_maximize = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btn_minimize = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btn_exit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2Elipse_Settings = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uc_settings1 = new Project_X.Uc_settings();
@@ -56,6 +58,9 @@ namespace Project_X
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_maximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.SuspendLayout();
             // 
             // leftPanel
@@ -77,7 +82,7 @@ namespace Project_X
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftPanel.Location = new System.Drawing.Point(0, 0);
             this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(243, 847);
+            this.leftPanel.Size = new System.Drawing.Size(243, 894);
             this.leftPanel.TabIndex = 0;
             // 
             // guna2GradientButton8
@@ -176,7 +181,7 @@ namespace Project_X
             this.btn_settings.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
             this.btn_settings.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
             this.btn_settings.HoverState.Parent = this.btn_settings;
-            this.btn_settings.Location = new System.Drawing.Point(3, 782);
+            this.btn_settings.Location = new System.Drawing.Point(3, 829);
             this.btn_settings.Name = "btn_settings";
             this.btn_settings.ShadowDecoration.Parent = this.btn_settings;
             this.btn_settings.Size = new System.Drawing.Size(243, 65);
@@ -367,48 +372,93 @@ namespace Project_X
             // 
             // topPanel
             // 
-            this.topPanel.BackColor = System.Drawing.Color.Turquoise;
-            this.topPanel.Controls.Add(this.guna2ControlBox1);
+            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.topPanel.Controls.Add(this.btn_maximize);
+            this.topPanel.Controls.Add(this.btn_minimize);
+            this.topPanel.Controls.Add(this.btn_exit);
             this.guna2Transition1.SetDecoration(this.topPanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(243, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1375, 60);
+            this.topPanel.Size = new System.Drawing.Size(1393, 60);
             this.topPanel.TabIndex = 1;
             // 
-            // guna2ControlBox1
+            // btn_maximize
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Transition1.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1318, 12);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 2;
+            this.btn_maximize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_maximize.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.btn_maximize, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_maximize.Image = ((System.Drawing.Image)(resources.GetObject("btn_maximize.Image")));
+            this.btn_maximize.Location = new System.Drawing.Point(1246, 12);
+            this.btn_maximize.Name = "btn_maximize";
+            this.btn_maximize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_maximize.ShadowDecoration.Parent = this.btn_maximize;
+            this.btn_maximize.Size = new System.Drawing.Size(30, 30);
+            this.btn_maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_maximize.TabIndex = 3;
+            this.btn_maximize.TabStop = false;
+            this.btn_maximize.UseTransparentBackground = true;
+            this.btn_maximize.Click += new System.EventHandler(this.btn_maximize_Click);
+            this.btn_maximize.MouseLeave += new System.EventHandler(this.btn_maximize_MouseLeave);
+            this.btn_maximize.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_maximize_MouseMove);
+            // 
+            // btn_minimize
+            // 
+            this.btn_minimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_minimize.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.btn_minimize, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_minimize.Image = ((System.Drawing.Image)(resources.GetObject("btn_minimize.Image")));
+            this.btn_minimize.Location = new System.Drawing.Point(1287, 12);
+            this.btn_minimize.Name = "btn_minimize";
+            this.btn_minimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_minimize.ShadowDecoration.Parent = this.btn_minimize;
+            this.btn_minimize.Size = new System.Drawing.Size(30, 30);
+            this.btn_minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_minimize.TabIndex = 3;
+            this.btn_minimize.TabStop = false;
+            this.btn_minimize.UseTransparentBackground = true;
+            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
+            this.btn_minimize.MouseLeave += new System.EventHandler(this.btn_minimize_MouseLeave);
+            this.btn_minimize.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_minimize_MouseMove);
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.btn_exit, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
+            this.btn_exit.Location = new System.Drawing.Point(1328, 12);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_exit.ShadowDecoration.Parent = this.btn_exit;
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_exit.TabIndex = 3;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.btn_exit.MouseLeave += new System.EventHandler(this.btn_exit_MouseLeave);
+            this.btn_exit.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_exit_MouseMove);
             // 
             // guna2Transition1
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2Transition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             this.guna2Transition1.TimeStep = 0.03F;
             // 
             // guna2Elipse_Settings
@@ -422,20 +472,21 @@ namespace Project_X
             | System.Windows.Forms.AnchorStyles.Right)));
             this.uc_settings1.BackColor = System.Drawing.Color.Gray;
             this.guna2Transition1.SetDecoration(this.uc_settings1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_settings1.Location = new System.Drawing.Point(243, 60);
+            this.uc_settings1.Location = new System.Drawing.Point(243, 61);
             this.uc_settings1.Name = "uc_settings1";
-            this.uc_settings1.Size = new System.Drawing.Size(1375, 787);
+            this.uc_settings1.Size = new System.Drawing.Size(1411, 881);
             this.uc_settings1.TabIndex = 2;
             // 
             // AdminControllerDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(124)))), ((int)(((byte)(133)))));
-            this.ClientSize = new System.Drawing.Size(1618, 847);
+            this.ClientSize = new System.Drawing.Size(1636, 894);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.uc_settings1);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1636, 894);
             this.Name = "AdminControllerDashboard";
@@ -447,6 +498,9 @@ namespace Project_X
             this.logoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_maximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -459,7 +513,6 @@ namespace Project_X
         private System.Windows.Forms.Panel topPanel;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2PictureBox logoPicture;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2GradientButton btn_settings;
@@ -472,6 +525,9 @@ namespace Project_X
         private Guna.UI2.WinForms.Guna2CircleButton sidebarShow;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton8;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse_Settings;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox btn_maximize;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox btn_minimize;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox btn_exit;
         private Uc_settings uc_settings1;
     }
 }
