@@ -34,7 +34,8 @@ namespace Project_X
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            uC_AddRoom1.Visible = true;
+            uC_AddRoom1.BringToFront();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
