@@ -39,10 +39,8 @@ namespace Project_X
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(620, 251);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Location = new System.Drawing.Point(620, 221);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(338, 232);
             this.button1.TabIndex = 0;
@@ -56,36 +54,30 @@ namespace Project_X
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(237, 412);
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.Location = new System.Drawing.Point(0, 713);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(0, 23);
+            this.button3.Size = new System.Drawing.Size(297, 71);
             this.button3.TabIndex = 5;
             this.button3.Text = "down left";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(1004, 568);
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.Location = new System.Drawing.Point(1154, 732);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(0, 23);
+            this.button4.Size = new System.Drawing.Size(221, 55);
             this.button4.TabIndex = 6;
             this.button4.Text = "down right";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(975, 192);
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.Location = new System.Drawing.Point(1102, 0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(0, 23);
+            this.button5.Size = new System.Drawing.Size(273, 61);
             this.button5.TabIndex = 7;
             this.button5.Text = "top right";
             this.button5.UseVisualStyleBackColor = true;
@@ -99,7 +91,7 @@ namespace Project_X
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Name = "Uc_settings";
-            this.Size = new System.Drawing.Size(1375, 847);
+            this.Size = new System.Drawing.Size(1375, 787);
             this.ResumeLayout(false);
 
         }

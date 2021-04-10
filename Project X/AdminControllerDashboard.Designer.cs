@@ -31,7 +31,7 @@ namespace Project_X
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminControllerDashboard));
-            Guna.UI2.AnimatorNS.Animation animation6 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
             this.leftPanel = new System.Windows.Forms.Panel();
             this.guna2GradientButton8 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.sidebarShow = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -338,7 +338,7 @@ namespace Project_X
             this.guna2Transition1.SetDecoration(this.logoPanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.logoPanel.Location = new System.Drawing.Point(-1, -1);
             this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(244, 76);
+            this.logoPanel.Size = new System.Drawing.Size(244, 60);
             this.logoPanel.TabIndex = 0;
             // 
             // logoPicture
@@ -373,7 +373,7 @@ namespace Project_X
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(243, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1375, 75);
+            this.topPanel.Size = new System.Drawing.Size(1375, 60);
             this.topPanel.TabIndex = 1;
             // 
             // guna2ControlBox1
@@ -393,22 +393,22 @@ namespace Project_X
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2Transition1.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation6;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation2;
             this.guna2Transition1.TimeStep = 0.03F;
             // 
             // guna2Elipse_Settings
@@ -420,11 +420,11 @@ namespace Project_X
             this.uc_settings1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.uc_settings1.BackColor = System.Drawing.Color.DarkRed;
+            this.uc_settings1.BackColor = System.Drawing.Color.Gray;
             this.guna2Transition1.SetDecoration(this.uc_settings1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_settings1.Location = new System.Drawing.Point(243, 0);
+            this.uc_settings1.Location = new System.Drawing.Point(243, 60);
             this.uc_settings1.Name = "uc_settings1";
-            this.uc_settings1.Size = new System.Drawing.Size(1375, 847);
+            this.uc_settings1.Size = new System.Drawing.Size(1375, 787);
             this.uc_settings1.TabIndex = 2;
             // 
             // AdminControllerDashboard
@@ -437,7 +437,7 @@ namespace Project_X
             this.Controls.Add(this.uc_settings1);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1618, 847);
+            this.MinimumSize = new System.Drawing.Size(1636, 894);
             this.Name = "AdminControllerDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminControllerDashboard";

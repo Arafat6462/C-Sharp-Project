@@ -27,7 +27,9 @@ namespace Project_X
         // for showing full left-sidebar
         private void sidebarShow_Click(object sender, EventArgs e)
         {
-            
+            // reset location and size of bode panel along with side-panel
+            uc_settings1.Location = new Point(243, 60);
+            this.uc_settings1.Size = new System.Drawing.Size(uc_settings1.Width - 180, uc_settings1.Height);
 
             logoPicture.Visible = true;
             sidebarShow.Visible = false;
@@ -39,7 +41,11 @@ namespace Project_X
 
         // for hiding full left-sidebar
         private void sidebarHide_Click(object sender, EventArgs e)
-        { 
+        {
+            // reset location and size of bode panel along with side-panel
+            uc_settings1.Location = new Point(55, 60);
+            this.uc_settings1.Size = new System.Drawing.Size(uc_settings1.Width+180, uc_settings1.Height);
+
             logoPicture.Visible = false;
             sidebarHide.Visible = false;
             sidebarShow.Visible = true;
