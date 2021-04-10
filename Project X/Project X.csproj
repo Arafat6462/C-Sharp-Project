@@ -58,6 +58,12 @@
     <Compile Include="All User Control\UC_AddRoom.Designer.cs">
       <DependentUpon>UC_AddRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminControllerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControllerDashboard.Designer.cs">
+      <DependentUpon>AdminControllerDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,15 @@
     <EmbeddedResource Include="All User Control\UC_AddRoom.resx">
       <DependentUpon>UC_AddRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Uc_settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_settings.Designer.cs">
+      <DependentUpon>Uc_settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminControllerDashboard.resx">
+      <DependentUpon>AdminControllerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +105,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Uc_settings.resx">
+      <DependentUpon>Uc_settings.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -42,5 +42,12 @@ namespace Project_X
                 txtPassword.Clear();
             }
         }
+
+        private void LoginAsAdmin_Click(object sender, EventArgs e)
+        {
+            AdminControllerDashboard adminControllerDashboard = new AdminControllerDashboard();
+            this.Hide();
+            adminControllerDashboard.Show();
+        }
     }
 }
