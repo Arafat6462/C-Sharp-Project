@@ -145,10 +145,15 @@ namespace Project_X
 
         private void btn_Theme_Click(object sender, EventArgs e)
         {
+            uc_Admin_AddEmployee1.Hide();
+            uc_Admin_EmployeeDetails1.Hide();
+            uc_Admin_RemoveEmployee1.Hide();
+            colorThemePanel.Hide();
+
+
             colorThemePanel.Show();
             colorThemePanel.BringToFront();
-            uc_Admin_AddEmployee1.Hide();
-        }
+         }
 
         private void btn_theme_light_Click(object sender, EventArgs e)
         {
@@ -197,6 +202,18 @@ namespace Project_X
         {
             uc_Admin_AddEmployee1.Visible = true;
             uc_Admin_AddEmployee1.BringToFront();
+        }
+
+        private void btn_RemoveEmployee_Click(object sender, EventArgs e)
+        {
+            uc_Admin_RemoveEmployee1.Visible = true;
+            uc_Admin_RemoveEmployee1.BringToFront();
+        }
+
+        private void btn_EmployeeDetails_Click(object sender, EventArgs e)
+        {
+            uc_Admin_EmployeeDetails1.Visible = true;
+            uc_Admin_EmployeeDetails1.BringToFront();
         }
     }
 }

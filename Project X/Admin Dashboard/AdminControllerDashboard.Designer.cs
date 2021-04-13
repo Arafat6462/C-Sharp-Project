@@ -40,7 +40,7 @@ namespace Project_X
             this.btn_Theme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_settings = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_Salary = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_Statistics = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_EmployeeDetails = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_Expense = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_RemoveEmployee = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_AddEmployee = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -54,7 +54,6 @@ namespace Project_X
             this.btn_exit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.colorThemePanel = new System.Windows.Forms.Panel();
-            this.uc_Admin_AddEmployee1 = new Project_X.Uc_Admin_AddEmployee();
             this.btn_theme_green = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_theme_red = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_theme_purple = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -65,6 +64,9 @@ namespace Project_X
             this.DefaultTheme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse_Settings = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse_AddEmployee = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uc_Admin_RemoveEmployee1 = new Project_X.Uc_Admin_RemoveEmployee();
+            this.uc_Admin_EmployeeDetails1 = new Project_X.Uc_Admin_EmployeeDetails();
+            this.uc_Admin_AddEmployee1 = new Project_X.Uc_Admin_AddEmployee();
             this.leftPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
@@ -85,7 +87,7 @@ namespace Project_X
             this.leftPanel.Controls.Add(this.btn_Theme);
             this.leftPanel.Controls.Add(this.btn_settings);
             this.leftPanel.Controls.Add(this.btn_Salary);
-            this.leftPanel.Controls.Add(this.btn_Statistics);
+            this.leftPanel.Controls.Add(this.btn_EmployeeDetails);
             this.leftPanel.Controls.Add(this.btn_Expense);
             this.leftPanel.Controls.Add(this.btn_RemoveEmployee);
             this.leftPanel.Controls.Add(this.btn_AddEmployee);
@@ -141,7 +143,7 @@ namespace Project_X
             this.sidebarShow.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.sidebarShow.HoverState.Parent = this.sidebarShow;
             this.sidebarShow.Image = ((System.Drawing.Image)(resources.GetObject("sidebarShow.Image")));
-            this.sidebarShow.Location = new System.Drawing.Point(28, 544);
+            this.sidebarShow.Location = new System.Drawing.Point(3, 543);
             this.sidebarShow.Name = "sidebarShow";
             this.sidebarShow.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.sidebarShow.ShadowDecoration.Parent = this.sidebarShow;
@@ -261,7 +263,7 @@ namespace Project_X
             this.btn_Salary.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
             this.btn_Salary.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
             this.btn_Salary.HoverState.Parent = this.btn_Salary;
-            this.btn_Salary.Location = new System.Drawing.Point(3, 406);
+            this.btn_Salary.Location = new System.Drawing.Point(3, 411);
             this.btn_Salary.Name = "btn_Salary";
             this.btn_Salary.ShadowDecoration.Parent = this.btn_Salary;
             this.btn_Salary.Size = new System.Drawing.Size(240, 65);
@@ -270,33 +272,34 @@ namespace Project_X
             this.btn_Salary.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Salary.TextOffset = new System.Drawing.Point(40, 0);
             // 
-            // btn_Statistics
+            // btn_EmployeeDetails
             // 
-            this.btn_Statistics.BorderRadius = 5;
-            this.btn_Statistics.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btn_Statistics.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.btn_Statistics.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
-            this.btn_Statistics.CheckedState.Parent = this.btn_Statistics;
-            this.btn_Statistics.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_Statistics.CustomImages.Image")));
-            this.btn_Statistics.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Statistics.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_Statistics.CustomImages.Parent = this.btn_Statistics;
-            this.guna2Transition1.SetDecoration(this.btn_Statistics, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btn_Statistics.FillColor = System.Drawing.Color.Empty;
-            this.btn_Statistics.FillColor2 = System.Drawing.Color.Empty;
-            this.btn_Statistics.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Statistics.ForeColor = System.Drawing.Color.White;
-            this.btn_Statistics.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.btn_Statistics.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.btn_Statistics.HoverState.Parent = this.btn_Statistics;
-            this.btn_Statistics.Location = new System.Drawing.Point(3, 341);
-            this.btn_Statistics.Name = "btn_Statistics";
-            this.btn_Statistics.ShadowDecoration.Parent = this.btn_Statistics;
-            this.btn_Statistics.Size = new System.Drawing.Size(240, 65);
-            this.btn_Statistics.TabIndex = 3;
-            this.btn_Statistics.Text = "Statistics";
-            this.btn_Statistics.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Statistics.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_EmployeeDetails.BorderRadius = 5;
+            this.btn_EmployeeDetails.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_EmployeeDetails.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_EmployeeDetails.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
+            this.btn_EmployeeDetails.CheckedState.Parent = this.btn_EmployeeDetails;
+            this.btn_EmployeeDetails.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_EmployeeDetails.CustomImages.Image")));
+            this.btn_EmployeeDetails.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_EmployeeDetails.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_EmployeeDetails.CustomImages.Parent = this.btn_EmployeeDetails;
+            this.guna2Transition1.SetDecoration(this.btn_EmployeeDetails, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_EmployeeDetails.FillColor = System.Drawing.Color.Empty;
+            this.btn_EmployeeDetails.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_EmployeeDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EmployeeDetails.ForeColor = System.Drawing.Color.White;
+            this.btn_EmployeeDetails.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_EmployeeDetails.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_EmployeeDetails.HoverState.Parent = this.btn_EmployeeDetails;
+            this.btn_EmployeeDetails.Location = new System.Drawing.Point(3, 279);
+            this.btn_EmployeeDetails.Name = "btn_EmployeeDetails";
+            this.btn_EmployeeDetails.ShadowDecoration.Parent = this.btn_EmployeeDetails;
+            this.btn_EmployeeDetails.Size = new System.Drawing.Size(240, 65);
+            this.btn_EmployeeDetails.TabIndex = 3;
+            this.btn_EmployeeDetails.Text = "Employee Details";
+            this.btn_EmployeeDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_EmployeeDetails.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_EmployeeDetails.Click += new System.EventHandler(this.btn_EmployeeDetails_Click);
             // 
             // btn_Expense
             // 
@@ -317,7 +320,7 @@ namespace Project_X
             this.btn_Expense.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
             this.btn_Expense.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
             this.btn_Expense.HoverState.Parent = this.btn_Expense;
-            this.btn_Expense.Location = new System.Drawing.Point(3, 276);
+            this.btn_Expense.Location = new System.Drawing.Point(3, 345);
             this.btn_Expense.Name = "btn_Expense";
             this.btn_Expense.ShadowDecoration.Parent = this.btn_Expense;
             this.btn_Expense.Size = new System.Drawing.Size(240, 65);
@@ -345,7 +348,7 @@ namespace Project_X
             this.btn_RemoveEmployee.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
             this.btn_RemoveEmployee.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
             this.btn_RemoveEmployee.HoverState.Parent = this.btn_RemoveEmployee;
-            this.btn_RemoveEmployee.Location = new System.Drawing.Point(3, 211);
+            this.btn_RemoveEmployee.Location = new System.Drawing.Point(3, 213);
             this.btn_RemoveEmployee.Name = "btn_RemoveEmployee";
             this.btn_RemoveEmployee.ShadowDecoration.Parent = this.btn_RemoveEmployee;
             this.btn_RemoveEmployee.Size = new System.Drawing.Size(240, 65);
@@ -353,6 +356,7 @@ namespace Project_X
             this.btn_RemoveEmployee.Text = "Remove Employee";
             this.btn_RemoveEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_RemoveEmployee.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_RemoveEmployee.Click += new System.EventHandler(this.btn_RemoveEmployee_Click);
             // 
             // btn_AddEmployee
             // 
@@ -373,7 +377,7 @@ namespace Project_X
             this.btn_AddEmployee.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
             this.btn_AddEmployee.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
             this.btn_AddEmployee.HoverState.Parent = this.btn_AddEmployee;
-            this.btn_AddEmployee.Location = new System.Drawing.Point(3, 146);
+            this.btn_AddEmployee.Location = new System.Drawing.Point(3, 147);
             this.btn_AddEmployee.Name = "btn_AddEmployee";
             this.btn_AddEmployee.ShadowDecoration.Parent = this.btn_AddEmployee;
             this.btn_AddEmployee.Size = new System.Drawing.Size(240, 65);
@@ -543,6 +547,8 @@ namespace Project_X
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.colorThemePanel.BackColor = System.Drawing.Color.Transparent;
+            this.colorThemePanel.Controls.Add(this.uc_Admin_RemoveEmployee1);
+            this.colorThemePanel.Controls.Add(this.uc_Admin_EmployeeDetails1);
             this.colorThemePanel.Controls.Add(this.uc_Admin_AddEmployee1);
             this.colorThemePanel.Controls.Add(this.btn_theme_green);
             this.colorThemePanel.Controls.Add(this.btn_theme_red);
@@ -557,18 +563,6 @@ namespace Project_X
             this.colorThemePanel.Name = "colorThemePanel";
             this.colorThemePanel.Size = new System.Drawing.Size(1464, 834);
             this.colorThemePanel.TabIndex = 3;
-            // 
-            // uc_Admin_AddEmployee1
-            // 
-            this.uc_Admin_AddEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uc_Admin_AddEmployee1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.uc_Admin_AddEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_Admin_AddEmployee1.Location = new System.Drawing.Point(0, 0);
-            this.uc_Admin_AddEmployee1.Name = "uc_Admin_AddEmployee1";
-            this.uc_Admin_AddEmployee1.Size = new System.Drawing.Size(1464, 834);
-            this.uc_Admin_AddEmployee1.TabIndex = 16;
             // 
             // btn_theme_green
             // 
@@ -752,6 +746,42 @@ namespace Project_X
             // 
             this.guna2Elipse_AddEmployee.BorderRadius = 0;
             // 
+            // uc_Admin_RemoveEmployee1
+            // 
+            this.uc_Admin_RemoveEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_RemoveEmployee1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_RemoveEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_RemoveEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_RemoveEmployee1.Name = "uc_Admin_RemoveEmployee1";
+            this.uc_Admin_RemoveEmployee1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_RemoveEmployee1.TabIndex = 18;
+            // 
+            // uc_Admin_EmployeeDetails1
+            // 
+            this.uc_Admin_EmployeeDetails1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_EmployeeDetails1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_EmployeeDetails1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_EmployeeDetails1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_EmployeeDetails1.Name = "uc_Admin_EmployeeDetails1";
+            this.uc_Admin_EmployeeDetails1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_EmployeeDetails1.TabIndex = 17;
+            // 
+            // uc_Admin_AddEmployee1
+            // 
+            this.uc_Admin_AddEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_AddEmployee1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_AddEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_AddEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_AddEmployee1.Name = "uc_Admin_AddEmployee1";
+            this.uc_Admin_AddEmployee1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_AddEmployee1.TabIndex = 16;
+            // 
             // AdminControllerDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -793,7 +823,7 @@ namespace Project_X
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2GradientButton btn_settings;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Salary;
-        private Guna.UI2.WinForms.Guna2GradientButton btn_Statistics;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_EmployeeDetails;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Expense;
         private Guna.UI2.WinForms.Guna2GradientButton btn_RemoveEmployee;
         private Guna.UI2.WinForms.Guna2CircleButton sidebarHide;
@@ -817,5 +847,7 @@ namespace Project_X
         private Guna.UI2.WinForms.Guna2GradientButton btn_theme_red;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse_AddEmployee;
         private Uc_Admin_AddEmployee uc_Admin_AddEmployee1;
+        private Uc_Admin_EmployeeDetails uc_Admin_EmployeeDetails1;
+        private Uc_Admin_RemoveEmployee uc_Admin_RemoveEmployee1;
     }
 }
