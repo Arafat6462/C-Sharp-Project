@@ -81,6 +81,12 @@
     <EmbeddedResource Include="All User Control\UC_AddRoom.resx">
       <DependentUpon>UC_AddRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Uc_Admin_AddEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_Admin_AddEmployee.Designer.cs">
+      <DependentUpon>Uc_Admin_AddEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uc_settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Uc_Admin_AddEmployee.resx">
+      <DependentUpon>Uc_Admin_AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uc_settings.resx">
       <DependentUpon>Uc_settings.cs</DependentUpon>
     </EmbeddedResource>
