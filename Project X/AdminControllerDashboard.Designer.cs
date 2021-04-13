@@ -31,7 +31,7 @@ namespace Project_X
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminControllerDashboard));
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             this.leftPanel = new System.Windows.Forms.Panel();
             this.btn_Profit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.sidebarShow = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -77,7 +77,7 @@ namespace Project_X
             // 
             // leftPanel
             // 
-            this.leftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.leftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
             this.leftPanel.Controls.Add(this.btn_Profit);
             this.leftPanel.Controls.Add(this.sidebarShow);
             this.leftPanel.Controls.Add(this.sidebarHide);
@@ -381,6 +381,7 @@ namespace Project_X
             this.btn_AddEmployee.Text = "Add Employee";
             this.btn_AddEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_AddEmployee.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_AddEmployee.Click += new System.EventHandler(this.btn_AddEmployee_Click);
             // 
             // btn_Dashboard
             // 
@@ -518,22 +519,22 @@ namespace Project_X
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2Transition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             this.guna2Transition1.TimeStep = 0.03F;
             // 
             // colorThemePanel
@@ -562,6 +563,7 @@ namespace Project_X
             this.uc_Admin_AddEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_AddEmployee1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.uc_Admin_AddEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.uc_Admin_AddEmployee1.Location = new System.Drawing.Point(0, 0);
             this.uc_Admin_AddEmployee1.Name = "uc_Admin_AddEmployee1";
@@ -753,7 +755,7 @@ namespace Project_X
             // AdminControllerDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(124)))), ((int)(((byte)(133)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.ClientSize = new System.Drawing.Size(1707, 894);
             this.Controls.Add(this.colorThemePanel);
             this.Controls.Add(this.topPanel);

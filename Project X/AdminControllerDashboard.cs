@@ -60,8 +60,8 @@ namespace Project_X
         {
             /* colorThemePanel.Hide();
              uc_settings1.Show();*/
-            uc_Admin_AddEmployee1.Show();
-            uc_Admin_AddEmployee1.BringToFront();
+           /* uc_Admin_AddEmployee1.Show();
+            uc_Admin_AddEmployee1.BringToFront();*/
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -157,7 +157,7 @@ namespace Project_X
 
         private void DefaultTheme_Click(object sender, EventArgs e)
         {
-            ChangeDashboardTheme("#313541", "#6F7C85", "#2C3D4F", "#2C3D4F");
+            ChangeDashboardTheme("#212F3D", "#34495E", "#2C3D4F", "#2C3D4F");
         }
 
         private void btn_theme_purple_Click(object sender, EventArgs e)
@@ -188,6 +188,15 @@ namespace Project_X
         private void btn_theme_yellow_Click(object sender, EventArgs e)
         {
             ChangeDashboardTheme("#D35400", "#F8C471", "#F5B041", "#F5B041");
+        }
+
+
+
+        // add employee
+        private void btn_AddEmployee_Click(object sender, EventArgs e)
+        {
+            uc_Admin_AddEmployee1.Visible = true;
+            uc_Admin_AddEmployee1.BringToFront();
         }
     }
 }
