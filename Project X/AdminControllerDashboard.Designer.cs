@@ -62,8 +62,8 @@ namespace Project_X
             this.btn_theme_yellow = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_theme_light = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DefaultTheme = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2Elipse_Settings = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uc_settings1 = new Project_X.Uc_settings();
+            this.guna2Elipse_Settings = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.leftPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
@@ -521,6 +521,7 @@ namespace Project_X
             // 
             // btn_theme_green
             // 
+            this.btn_theme_green.Animated = true;
             this.btn_theme_green.BorderRadius = 15;
             this.btn_theme_green.BorderThickness = 1;
             this.btn_theme_green.CheckedState.Parent = this.btn_theme_green;
@@ -541,6 +542,7 @@ namespace Project_X
             // 
             // btn_theme_red
             // 
+            this.btn_theme_red.Animated = true;
             this.btn_theme_red.BorderColor = System.Drawing.Color.Red;
             this.btn_theme_red.BorderRadius = 15;
             this.btn_theme_red.BorderThickness = 1;
@@ -562,6 +564,7 @@ namespace Project_X
             // 
             // btn_theme_purple
             // 
+            this.btn_theme_purple.Animated = true;
             this.btn_theme_purple.BorderColor = System.Drawing.Color.Purple;
             this.btn_theme_purple.BorderRadius = 15;
             this.btn_theme_purple.BorderThickness = 1;
@@ -583,6 +586,7 @@ namespace Project_X
             // 
             // btn_theme_gray
             // 
+            this.btn_theme_gray.Animated = true;
             this.btn_theme_gray.BorderColor = System.Drawing.Color.White;
             this.btn_theme_gray.BorderRadius = 15;
             this.btn_theme_gray.BorderThickness = 1;
@@ -604,6 +608,7 @@ namespace Project_X
             // 
             // btn_theme_blue
             // 
+            this.btn_theme_blue.Animated = true;
             this.btn_theme_blue.BorderColor = System.Drawing.Color.Cyan;
             this.btn_theme_blue.BorderRadius = 15;
             this.btn_theme_blue.BorderThickness = 1;
@@ -625,6 +630,7 @@ namespace Project_X
             // 
             // btn_theme_yellow
             // 
+            this.btn_theme_yellow.Animated = true;
             this.btn_theme_yellow.BorderColor = System.Drawing.Color.Orange;
             this.btn_theme_yellow.BorderRadius = 15;
             this.btn_theme_yellow.BorderThickness = 1;
@@ -646,6 +652,7 @@ namespace Project_X
             // 
             // btn_theme_light
             // 
+            this.btn_theme_light.Animated = true;
             this.btn_theme_light.BorderColor = System.Drawing.Color.Pink;
             this.btn_theme_light.BorderRadius = 15;
             this.btn_theme_light.BorderThickness = 1;
@@ -667,6 +674,7 @@ namespace Project_X
             // 
             // DefaultTheme
             // 
+            this.DefaultTheme.Animated = true;
             this.DefaultTheme.BorderRadius = 15;
             this.DefaultTheme.BorderThickness = 1;
             this.DefaultTheme.CheckedState.Parent = this.DefaultTheme;
@@ -685,10 +693,6 @@ namespace Project_X
             this.DefaultTheme.Text = "Default";
             this.DefaultTheme.Click += new System.EventHandler(this.DefaultTheme_Click);
             // 
-            // guna2Elipse_Settings
-            // 
-            this.guna2Elipse_Settings.BorderRadius = 0;
-            // 
             // uc_settings1
             // 
             this.uc_settings1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -700,6 +704,10 @@ namespace Project_X
             this.uc_settings1.Name = "uc_settings1";
             this.uc_settings1.Size = new System.Drawing.Size(1464, 834);
             this.uc_settings1.TabIndex = 2;
+            // 
+            // guna2Elipse_Settings
+            // 
+            this.guna2Elipse_Settings.BorderRadius = 0;
             // 
             // AdminControllerDashboard
             // 
