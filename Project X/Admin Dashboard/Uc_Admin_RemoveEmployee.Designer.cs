@@ -31,50 +31,50 @@ namespace Project_X
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Uc_Admin_RemoveEmployee));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse_RemoveEmployee = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_searachID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Dashboard = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.btn_DeleteEmployee = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.DataGridView__RemoveEmployee = new Guna.UI2.WinForms.Guna2DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView__RemoveEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse_RemoveEmployee
             // 
             this.guna2Elipse_RemoveEmployee.BorderRadius = 0;
             // 
-            // guna2TextBox1
+            // txt_searachID
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.BorderThickness = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.DimGray;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(17, 92);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Enter Employee ID";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(270, 50);
-            this.guna2TextBox1.TabIndex = 4;
+            this.txt_searachID.BorderColor = System.Drawing.Color.Gray;
+            this.txt_searachID.BorderRadius = 5;
+            this.txt_searachID.BorderThickness = 2;
+            this.txt_searachID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_searachID.DefaultText = "";
+            this.txt_searachID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_searachID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_searachID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_searachID.DisabledState.Parent = this.txt_searachID;
+            this.txt_searachID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_searachID.FillColor = System.Drawing.Color.DimGray;
+            this.txt_searachID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_searachID.FocusedState.Parent = this.txt_searachID;
+            this.txt_searachID.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_searachID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.txt_searachID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.txt_searachID.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.txt_searachID.HoverState.Parent = this.txt_searachID;
+            this.txt_searachID.Location = new System.Drawing.Point(17, 92);
+            this.txt_searachID.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_searachID.Name = "txt_searachID";
+            this.txt_searachID.PasswordChar = '\0';
+            this.txt_searachID.PlaceholderText = "Enter Employee ID";
+            this.txt_searachID.SelectedText = "";
+            this.txt_searachID.ShadowDecoration.Parent = this.txt_searachID;
+            this.txt_searachID.Size = new System.Drawing.Size(270, 50);
+            this.txt_searachID.TabIndex = 4;
             // 
             // label1
             // 
@@ -87,107 +87,109 @@ namespace Project_X
             this.label1.TabIndex = 3;
             this.label1.Text = "Employee Id";
             // 
-            // btn_Dashboard
+            // btn_DeleteEmployee
             // 
-            this.btn_Dashboard.Animated = true;
-            this.btn_Dashboard.BorderColor = System.Drawing.Color.LightCoral;
-            this.btn_Dashboard.BorderRadius = 15;
-            this.btn_Dashboard.BorderThickness = 1;
-            this.btn_Dashboard.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
-            this.btn_Dashboard.CheckedState.BorderColor = System.Drawing.Color.Red;
-            this.btn_Dashboard.CheckedState.FillColor = System.Drawing.Color.Crimson;
-            this.btn_Dashboard.CheckedState.FillColor2 = System.Drawing.Color.LightPink;
-            this.btn_Dashboard.CheckedState.Parent = this.btn_Dashboard;
-            this.btn_Dashboard.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_Dashboard.CustomImages.CheckedImage")));
-            this.btn_Dashboard.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Dashboard.CustomImages.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btn_Dashboard.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_Dashboard.CustomImages.Parent = this.btn_Dashboard;
-            this.btn_Dashboard.FillColor = System.Drawing.Color.Empty;
-            this.btn_Dashboard.FillColor2 = System.Drawing.Color.Empty;
-            this.btn_Dashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Dashboard.ForeColor = System.Drawing.Color.White;
-            this.btn_Dashboard.HoverState.BorderColor = System.Drawing.Color.Red;
-            this.btn_Dashboard.HoverState.Parent = this.btn_Dashboard;
-            this.btn_Dashboard.Location = new System.Drawing.Point(1183, 77);
-            this.btn_Dashboard.Name = "btn_Dashboard";
-            this.btn_Dashboard.ShadowDecoration.Parent = this.btn_Dashboard;
-            this.btn_Dashboard.Size = new System.Drawing.Size(240, 65);
-            this.btn_Dashboard.TabIndex = 5;
-            this.btn_Dashboard.Text = "Delete Employee";
-            this.btn_Dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Dashboard.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_DeleteEmployee.Animated = true;
+            this.btn_DeleteEmployee.BorderColor = System.Drawing.Color.LightCoral;
+            this.btn_DeleteEmployee.BorderRadius = 15;
+            this.btn_DeleteEmployee.BorderThickness = 1;
+            this.btn_DeleteEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.btn_DeleteEmployee.CheckedState.BorderColor = System.Drawing.Color.Red;
+            this.btn_DeleteEmployee.CheckedState.FillColor = System.Drawing.Color.Crimson;
+            this.btn_DeleteEmployee.CheckedState.FillColor2 = System.Drawing.Color.LightPink;
+            this.btn_DeleteEmployee.CheckedState.Parent = this.btn_DeleteEmployee;
+            this.btn_DeleteEmployee.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_Dashboard.CustomImages.CheckedImage")));
+            this.btn_DeleteEmployee.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DeleteEmployee.CustomImages.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btn_DeleteEmployee.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_DeleteEmployee.CustomImages.Parent = this.btn_DeleteEmployee;
+            this.btn_DeleteEmployee.FillColor = System.Drawing.Color.Empty;
+            this.btn_DeleteEmployee.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_DeleteEmployee.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DeleteEmployee.ForeColor = System.Drawing.Color.White;
+            this.btn_DeleteEmployee.HoverState.BorderColor = System.Drawing.Color.Red;
+            this.btn_DeleteEmployee.HoverState.Parent = this.btn_DeleteEmployee;
+            this.btn_DeleteEmployee.Location = new System.Drawing.Point(1183, 77);
+            this.btn_DeleteEmployee.Name = "btn_DeleteEmployee";
+            this.btn_DeleteEmployee.ShadowDecoration.Parent = this.btn_DeleteEmployee;
+            this.btn_DeleteEmployee.Size = new System.Drawing.Size(240, 65);
+            this.btn_DeleteEmployee.TabIndex = 5;
+            this.btn_DeleteEmployee.Text = "Delete Employee";
+            this.btn_DeleteEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DeleteEmployee.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_DeleteEmployee.Click += new System.EventHandler(this.btn_DeleteEmployee_Click);
             // 
-            // guna2DataGridView1
+            // DataGridView__RemoveEmployee
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(17, 201);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1447, 630);
-            this.guna2DataGridView1.TabIndex = 6;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DataGridView__RemoveEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridView__RemoveEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridView__RemoveEmployee.BackgroundColor = System.Drawing.Color.White;
+            this.DataGridView__RemoveEmployee.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DataGridView__RemoveEmployee.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridView__RemoveEmployee.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView__RemoveEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridView__RemoveEmployee.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView__RemoveEmployee.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridView__RemoveEmployee.EnableHeadersVisualStyles = false;
+            this.DataGridView__RemoveEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridView__RemoveEmployee.Location = new System.Drawing.Point(17, 201);
+            this.DataGridView__RemoveEmployee.Name = "DataGridView__RemoveEmployee";
+            this.DataGridView__RemoveEmployee.RowHeadersVisible = false;
+            this.DataGridView__RemoveEmployee.RowHeadersWidth = 51;
+            this.DataGridView__RemoveEmployee.RowTemplate.Height = 24;
+            this.DataGridView__RemoveEmployee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridView__RemoveEmployee.Size = new System.Drawing.Size(1447, 630);
+            this.DataGridView__RemoveEmployee.TabIndex = 6;
+            this.DataGridView__RemoveEmployee.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.DataGridView__RemoveEmployee.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridView__RemoveEmployee.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DataGridView__RemoveEmployee.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DataGridView__RemoveEmployee.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DataGridView__RemoveEmployee.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DataGridView__RemoveEmployee.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridView__RemoveEmployee.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridView__RemoveEmployee.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DataGridView__RemoveEmployee.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridView__RemoveEmployee.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.DataGridView__RemoveEmployee.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DataGridView__RemoveEmployee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DataGridView__RemoveEmployee.ThemeStyle.HeaderStyle.Height = 4;
+            this.DataGridView__RemoveEmployee.ThemeStyle.ReadOnly = false;
+            this.DataGridView__RemoveEmployee.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridView__RemoveEmployee.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridView__RemoveEmployee.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.DataGridView__RemoveEmployee.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGridView__RemoveEmployee.ThemeStyle.RowsStyle.Height = 24;
+            this.DataGridView__RemoveEmployee.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridView__RemoveEmployee.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // Uc_Admin_RemoveEmployee
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.guna2DataGridView1);
-            this.Controls.Add(this.btn_Dashboard);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.DataGridView__RemoveEmployee);
+            this.Controls.Add(this.btn_DeleteEmployee);
+            this.Controls.Add(this.txt_searachID);
             this.Controls.Add(this.label1);
             this.Name = "Uc_Admin_RemoveEmployee";
             this.Size = new System.Drawing.Size(1464, 834);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Uc_Admin_RemoveEmployee_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView__RemoveEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,9 +198,9 @@ namespace Project_X
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse_RemoveEmployee;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_searachID;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2GradientButton btn_Dashboard;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_DeleteEmployee;
+        private Guna.UI2.WinForms.Guna2DataGridView DataGridView__RemoveEmployee;
     }
 }
