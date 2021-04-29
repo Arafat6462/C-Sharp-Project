@@ -29,7 +29,7 @@ namespace Project_X
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            uC_CustomerRegistration1.Visible = false;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -53,9 +53,10 @@ namespace Project_X
 
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e) //customer registration button
         {
-
+            uC_CustomerRegistration1.Visible = true;
+            uC_CustomerRegistration1.BringToFront();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
