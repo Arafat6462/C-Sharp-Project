@@ -43,9 +43,10 @@ namespace Project_X
 
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void guna2Button4_Click(object sender, EventArgs e) //customer details button
         {
-
+            customerDetails1.Visible = true;
+            customerDetails1.BringToFront();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
