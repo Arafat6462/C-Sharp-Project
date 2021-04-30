@@ -67,6 +67,7 @@ namespace Project_X
             this.uc_Admin_RemoveEmployee1 = new Project_X.Uc_Admin_RemoveEmployee();
             this.uc_Admin_EmployeeDetails1 = new Project_X.Uc_Admin_EmployeeDetails();
             this.uc_Admin_AddEmployee1 = new Project_X.Uc_Admin_AddEmployee();
+            this.uc_Admin_Salary1 = new Project_X.Uc_Admin_Salary();
             this.leftPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
@@ -271,6 +272,7 @@ namespace Project_X
             this.btn_Salary.Text = "Salary";
             this.btn_Salary.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Salary.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Salary.Click += new System.EventHandler(this.btn_Salary_Click);
             // 
             // btn_EmployeeDetails
             // 
@@ -547,6 +549,7 @@ namespace Project_X
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.colorThemePanel.BackColor = System.Drawing.Color.Transparent;
+            this.colorThemePanel.Controls.Add(this.uc_Admin_Salary1);
             this.colorThemePanel.Controls.Add(this.uc_Admin_RemoveEmployee1);
             this.colorThemePanel.Controls.Add(this.uc_Admin_EmployeeDetails1);
             this.colorThemePanel.Controls.Add(this.uc_Admin_AddEmployee1);
@@ -782,6 +785,14 @@ namespace Project_X
             this.uc_Admin_AddEmployee1.Size = new System.Drawing.Size(1464, 834);
             this.uc_Admin_AddEmployee1.TabIndex = 16;
             // 
+            // uc_Admin_Salary1
+            // 
+            this.guna2Transition1.SetDecoration(this.uc_Admin_Salary1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_Salary1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_Salary1.Name = "uc_Admin_Salary1";
+            this.uc_Admin_Salary1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_Salary1.TabIndex = 19;
+            // 
             // AdminControllerDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -849,5 +860,6 @@ namespace Project_X
         private Uc_Admin_AddEmployee uc_Admin_AddEmployee1;
         private Uc_Admin_EmployeeDetails uc_Admin_EmployeeDetails1;
         private Uc_Admin_RemoveEmployee uc_Admin_RemoveEmployee1;
+        private Uc_Admin_Salary uc_Admin_Salary1;
     }
 }

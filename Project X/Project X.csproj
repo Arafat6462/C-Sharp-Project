@@ -85,8 +85,17 @@
     <Compile Include="Admin Dashboard\Uc_Admin_RemoveEmployee.Designer.cs">
       <DependentUpon>Uc_Admin_RemoveEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin Dashboard\Uc_Admin_Salary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\Uc_Admin_Salary.Designer.cs">
+      <DependentUpon>Uc_Admin_Salary.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin Dashboard\Uc_Admin_RemoveEmployee.resx">
       <DependentUpon>Uc_Admin_RemoveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\Uc_Admin_Salary.resx">
+      <DependentUpon>Uc_Admin_Salary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_AddRoom.resx">
       <DependentUpon>UC_AddRoom.cs</DependentUpon>
@@ -126,6 +135,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Admin Dashboard\Uc_Admin_AddEmployee.resx">
       <DependentUpon>Uc_Admin_AddEmployee.cs</DependentUpon>
@@ -149,6 +159,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

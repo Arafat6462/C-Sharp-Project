@@ -215,6 +215,12 @@ namespace Project_X
             uc_Admin_EmployeeDetails1.Visible = true;
             uc_Admin_EmployeeDetails1.BringToFront();
         }
+
+        private void btn_Salary_Click(object sender, EventArgs e)
+        {
+            uc_Admin_Salary1.Visible = true;
+            uc_Admin_Salary1.BringToFront();
+        }
     }
 }
  
