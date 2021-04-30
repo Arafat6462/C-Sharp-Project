@@ -29,7 +29,6 @@ namespace Project_X
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnEmployee = new Guna.UI2.WinForms.Guna2Button();
@@ -38,10 +37,9 @@ namespace Project_X
             this.btnCustomerRegistration = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_AddRoom1 = new Project_X.All_User_Control.UC_AddRoom();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnMinimize = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_AddRoom1 = new Project_X.All_User_Control.UC_AddRoom();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -194,6 +192,18 @@ namespace Project_X
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // uC_AddRoom1
+            // 
+            this.uC_AddRoom1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
+            this.uC_AddRoom1.Location = new System.Drawing.Point(-2, -2);
+            this.uC_AddRoom1.Name = "uC_AddRoom1";
+            this.uC_AddRoom1.Size = new System.Drawing.Size(1198, 520);
+            this.uC_AddRoom1.TabIndex = 0;
+            this.uC_AddRoom1.Visible = false;
+            // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
@@ -232,23 +242,6 @@ namespace Project_X
             this.btnMinimize.TabIndex = 10;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // uC_AddRoom1
-            // 
-            this.uC_AddRoom1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
-            this.uC_AddRoom1.Location = new System.Drawing.Point(-2, -2);
-            this.uC_AddRoom1.Name = "uC_AddRoom1";
-            this.uC_AddRoom1.Size = new System.Drawing.Size(1198, 520);
-            this.uC_AddRoom1.TabIndex = 0;
-            this.uC_AddRoom1.Visible = false;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,7 +276,6 @@ namespace Project_X
         private Guna.UI2.WinForms.Guna2Button btnCustomerRegistration;
         private Guna.UI2.WinForms.Guna2Button btnAddRoom;
         private Guna.UI2.WinForms.Guna2CircleButton btnMinimize;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private All_User_Control.UC_AddRoom uC_AddRoom1;
     }
 }
