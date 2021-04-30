@@ -40,6 +40,9 @@ namespace Project_X
             this.button5 = new System.Windows.Forms.Button();
             this.guna2ToggleSwitch2 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.btn_Pay = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.button6 = new System.Windows.Forms.Button();
+            this.btn_SelectAll = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_PayAll = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // guna2Elipse_Salary
@@ -142,7 +145,6 @@ namespace Project_X
             this.btn_Pay.CheckedState.FillColor = System.Drawing.Color.DarkSlateGray;
             this.btn_Pay.CheckedState.FillColor2 = System.Drawing.Color.DarkSlateGray;
             this.btn_Pay.CheckedState.Parent = this.btn_Pay;
-            this.btn_Pay.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_Pay.CustomImages.CheckedImage")));
             this.btn_Pay.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Pay.CustomImages.ImageOffset = new System.Drawing.Point(10, 0);
             this.btn_Pay.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
@@ -159,14 +161,89 @@ namespace Project_X
             this.btn_Pay.Size = new System.Drawing.Size(150, 40);
             this.btn_Pay.TabIndex = 5;
             this.btn_Pay.Text = "Pay";
-            this.btn_Pay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Pay.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Pay.Visible = false;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(422, 260);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // btn_SelectAll
+            // 
+            this.btn_SelectAll.Animated = true;
+            this.btn_SelectAll.BorderColor = System.Drawing.Color.White;
+            this.btn_SelectAll.BorderRadius = 15;
+            this.btn_SelectAll.BorderThickness = 1;
+            this.btn_SelectAll.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.btn_SelectAll.CheckedState.BorderColor = System.Drawing.Color.Lime;
+            this.btn_SelectAll.CheckedState.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.btn_SelectAll.CheckedState.FillColor2 = System.Drawing.Color.DarkSlateGray;
+            this.btn_SelectAll.CheckedState.Parent = this.btn_SelectAll;
+            this.btn_SelectAll.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_SelectAll.CustomImages.CheckedImage")));
+            this.btn_SelectAll.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_SelectAll.CustomImages.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btn_SelectAll.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_SelectAll.CustomImages.Parent = this.btn_SelectAll;
+            this.btn_SelectAll.FillColor = System.Drawing.Color.Empty;
+            this.btn_SelectAll.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_SelectAll.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SelectAll.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectAll.HoverState.BorderColor = System.Drawing.Color.LimeGreen;
+            this.btn_SelectAll.HoverState.Parent = this.btn_SelectAll;
+            this.btn_SelectAll.Location = new System.Drawing.Point(978, 619);
+            this.btn_SelectAll.Name = "btn_SelectAll";
+            this.btn_SelectAll.ShadowDecoration.Parent = this.btn_SelectAll;
+            this.btn_SelectAll.Size = new System.Drawing.Size(180, 50);
+            this.btn_SelectAll.TabIndex = 7;
+            this.btn_SelectAll.Text = "Select All";
+            this.btn_SelectAll.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_SelectAll.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_SelectAll.Click += new System.EventHandler(this.btn_SelectAll_Click);
+            // 
+            // btn_PayAll
+            // 
+            this.btn_PayAll.Animated = true;
+            this.btn_PayAll.BorderColor = System.Drawing.Color.White;
+            this.btn_PayAll.BorderRadius = 15;
+            this.btn_PayAll.BorderThickness = 1;
+            this.btn_PayAll.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.btn_PayAll.CheckedState.BorderColor = System.Drawing.Color.Lime;
+            this.btn_PayAll.CheckedState.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.btn_PayAll.CheckedState.FillColor2 = System.Drawing.Color.DarkSlateGray;
+            this.btn_PayAll.CheckedState.Parent = this.btn_PayAll;
+            this.btn_PayAll.CustomImages.CheckedImage = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton1.CustomImages.CheckedImage")));
+            this.btn_PayAll.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_PayAll.CustomImages.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btn_PayAll.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_PayAll.CustomImages.Parent = this.btn_PayAll;
+            this.btn_PayAll.FillColor = System.Drawing.Color.Empty;
+            this.btn_PayAll.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_PayAll.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PayAll.ForeColor = System.Drawing.Color.White;
+            this.btn_PayAll.HoverState.BorderColor = System.Drawing.Color.LimeGreen;
+            this.btn_PayAll.HoverState.Parent = this.btn_PayAll;
+            this.btn_PayAll.Location = new System.Drawing.Point(1208, 619);
+            this.btn_PayAll.Name = "btn_PayAll";
+            this.btn_PayAll.ShadowDecoration.Parent = this.btn_PayAll;
+            this.btn_PayAll.Size = new System.Drawing.Size(180, 50);
+            this.btn_PayAll.TabIndex = 7;
+            this.btn_PayAll.Text = "Pay to All";
+            this.btn_PayAll.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_PayAll.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_PayAll.Click += new System.EventHandler(this.btn_SelectAll_Click);
             // 
             // Uc_Admin_Salary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.btn_PayAll);
+            this.Controls.Add(this.btn_SelectAll);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.btn_Pay);
             this.Controls.Add(this.guna2ToggleSwitch2);
             this.Controls.Add(this.button5);
@@ -194,5 +271,8 @@ namespace Project_X
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch2;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Pay;
+        private System.Windows.Forms.Button button6;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_SelectAll;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_PayAll;
     }
 }
