@@ -12,6 +12,8 @@ namespace Project_X
 {
     public partial class Form1 : Form
     {
+        function fn = new function();
+        string query = "";
         public Form1()
         {
             InitializeComponent();
@@ -29,12 +31,26 @@ namespace Project_X
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "Username" && txtPassword.Text == "Password")
+            query = "select username,pass from employee where username = '"+txtUsername.Text+"' and pass = '"+txtPassword.Text+"'";
+            DataSet ds = fn.getData(query);
+
+
+            if (ds.Tables[0].Rows.Count != 0)
             {
-                labelError.Visible = false;
-                Dashboard ds = new Dashboard();
-                this.Hide();
-                ds.Show();
+                // check as admin
+                if (checkBox_Login_as_Admin.Checked == true)
+                {
+                    AdminControllerDashboard adminControllerDashboard = new AdminControllerDashboard();
+                    this.Hide();
+                    adminControllerDashboard.Show();
+                }
+                else
+                {
+                    labelError.Visible = false;
+                    Dashboard dash = new Dashboard();
+                    this.Hide();
+                    dash.Show();
+                }
             }
             else
             {
@@ -45,9 +61,7 @@ namespace Project_X
 
         private void LoginAsAdmin_Click(object sender, EventArgs e)
         {
-            AdminControllerDashboard adminControllerDashboard = new AdminControllerDashboard();
-            this.Hide();
-            adminControllerDashboard.Show();
+           
         }
     }
 }

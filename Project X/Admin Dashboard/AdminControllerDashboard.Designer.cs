@@ -38,7 +38,6 @@ namespace Project_X
             this.sidebarHide = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.btn_Theme = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btn_settings = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_Salary = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_EmployeeDetails = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_Expense = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -54,6 +53,11 @@ namespace Project_X
             this.btn_exit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.colorThemePanel = new System.Windows.Forms.Panel();
+            this.uc_Admin_Dashboard1 = new Project_X.Uc_Admin_Dashboard();
+            this.uc_Admin_Salary1 = new Project_X.Uc_Admin_Salary();
+            this.uc_Admin_RemoveEmployee1 = new Project_X.Uc_Admin_RemoveEmployee();
+            this.uc_Admin_EmployeeDetails1 = new Project_X.Uc_Admin_EmployeeDetails();
+            this.uc_Admin_AddEmployee1 = new Project_X.Uc_Admin_AddEmployee();
             this.btn_theme_green = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_theme_red = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_theme_purple = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -64,11 +68,6 @@ namespace Project_X
             this.DefaultTheme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse_Settings = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse_AddEmployee = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uc_Admin_Salary1 = new Project_X.Uc_Admin_Salary();
-            this.uc_Admin_RemoveEmployee1 = new Project_X.Uc_Admin_RemoveEmployee();
-            this.uc_Admin_EmployeeDetails1 = new Project_X.Uc_Admin_EmployeeDetails();
-            this.uc_Admin_AddEmployee1 = new Project_X.Uc_Admin_AddEmployee();
-            this.uc_Admin_Dashboard1 = new Project_X.Uc_Admin_Dashboard();
             this.leftPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
@@ -87,7 +86,6 @@ namespace Project_X
             this.leftPanel.Controls.Add(this.sidebarHide);
             this.leftPanel.Controls.Add(this.guna2Separator1);
             this.leftPanel.Controls.Add(this.btn_Theme);
-            this.leftPanel.Controls.Add(this.btn_settings);
             this.leftPanel.Controls.Add(this.btn_Salary);
             this.leftPanel.Controls.Add(this.btn_EmployeeDetails);
             this.leftPanel.Controls.Add(this.btn_Expense);
@@ -206,7 +204,7 @@ namespace Project_X
             this.btn_Theme.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
             this.btn_Theme.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
             this.btn_Theme.HoverState.Parent = this.btn_Theme;
-            this.btn_Theme.Location = new System.Drawing.Point(0, 758);
+            this.btn_Theme.Location = new System.Drawing.Point(0, 824);
             this.btn_Theme.Name = "btn_Theme";
             this.btn_Theme.ShadowDecoration.Parent = this.btn_Theme;
             this.btn_Theme.Size = new System.Drawing.Size(243, 65);
@@ -215,36 +213,6 @@ namespace Project_X
             this.btn_Theme.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Theme.TextOffset = new System.Drawing.Point(40, 0);
             this.btn_Theme.Click += new System.EventHandler(this.btn_Theme_Click);
-            // 
-            // btn_settings
-            // 
-            this.btn_settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_settings.BorderRadius = 5;
-            this.btn_settings.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btn_settings.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.btn_settings.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
-            this.btn_settings.CheckedState.Parent = this.btn_settings;
-            this.btn_settings.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_settings.CustomImages.Image")));
-            this.btn_settings.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_settings.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_settings.CustomImages.Parent = this.btn_settings;
-            this.guna2Transition1.SetDecoration(this.btn_settings, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btn_settings.FillColor = System.Drawing.Color.Empty;
-            this.btn_settings.FillColor2 = System.Drawing.Color.Empty;
-            this.btn_settings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_settings.ForeColor = System.Drawing.Color.White;
-            this.btn_settings.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.btn_settings.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.btn_settings.HoverState.Parent = this.btn_settings;
-            this.btn_settings.Location = new System.Drawing.Point(3, 829);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.ShadowDecoration.Parent = this.btn_settings;
-            this.btn_settings.Size = new System.Drawing.Size(243, 65);
-            this.btn_settings.TabIndex = 3;
-            this.btn_settings.Text = "Settings";
-            this.btn_settings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_settings.TextOffset = new System.Drawing.Point(40, 0);
-            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
             // btn_Salary
             // 
@@ -570,6 +538,62 @@ namespace Project_X
             this.colorThemePanel.Size = new System.Drawing.Size(1464, 834);
             this.colorThemePanel.TabIndex = 3;
             // 
+            // uc_Admin_Dashboard1
+            // 
+            this.uc_Admin_Dashboard1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_Dashboard1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_Dashboard1.Location = new System.Drawing.Point(1, 0);
+            this.uc_Admin_Dashboard1.Name = "uc_Admin_Dashboard1";
+            this.uc_Admin_Dashboard1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_Dashboard1.TabIndex = 20;
+            // 
+            // uc_Admin_Salary1
+            // 
+            this.uc_Admin_Salary1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_Salary1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_Salary1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uc_Admin_Salary1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_Salary1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uc_Admin_Salary1.Name = "uc_Admin_Salary1";
+            this.uc_Admin_Salary1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_Salary1.TabIndex = 19;
+            // 
+            // uc_Admin_RemoveEmployee1
+            // 
+            this.uc_Admin_RemoveEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_RemoveEmployee1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_RemoveEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_RemoveEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_RemoveEmployee1.Name = "uc_Admin_RemoveEmployee1";
+            this.uc_Admin_RemoveEmployee1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_RemoveEmployee1.TabIndex = 18;
+            // 
+            // uc_Admin_EmployeeDetails1
+            // 
+            this.uc_Admin_EmployeeDetails1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_EmployeeDetails1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_EmployeeDetails1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_EmployeeDetails1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_EmployeeDetails1.Name = "uc_Admin_EmployeeDetails1";
+            this.uc_Admin_EmployeeDetails1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_EmployeeDetails1.TabIndex = 17;
+            // 
+            // uc_Admin_AddEmployee1
+            // 
+            this.uc_Admin_AddEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_AddEmployee1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_AddEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_AddEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_AddEmployee1.Name = "uc_Admin_AddEmployee1";
+            this.uc_Admin_AddEmployee1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_AddEmployee1.TabIndex = 16;
+            // 
             // btn_theme_green
             // 
             this.btn_theme_green.Animated = true;
@@ -752,62 +776,6 @@ namespace Project_X
             // 
             this.guna2Elipse_AddEmployee.BorderRadius = 0;
             // 
-            // uc_Admin_Salary1
-            // 
-            this.uc_Admin_Salary1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.uc_Admin_Salary1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_Admin_Salary1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uc_Admin_Salary1.Location = new System.Drawing.Point(0, 0);
-            this.uc_Admin_Salary1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uc_Admin_Salary1.Name = "uc_Admin_Salary1";
-            this.uc_Admin_Salary1.Size = new System.Drawing.Size(1464, 834);
-            this.uc_Admin_Salary1.TabIndex = 19;
-            // 
-            // uc_Admin_RemoveEmployee1
-            // 
-            this.uc_Admin_RemoveEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uc_Admin_RemoveEmployee1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.uc_Admin_RemoveEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_Admin_RemoveEmployee1.Location = new System.Drawing.Point(0, 0);
-            this.uc_Admin_RemoveEmployee1.Name = "uc_Admin_RemoveEmployee1";
-            this.uc_Admin_RemoveEmployee1.Size = new System.Drawing.Size(1464, 834);
-            this.uc_Admin_RemoveEmployee1.TabIndex = 18;
-            // 
-            // uc_Admin_EmployeeDetails1
-            // 
-            this.uc_Admin_EmployeeDetails1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uc_Admin_EmployeeDetails1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.uc_Admin_EmployeeDetails1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_Admin_EmployeeDetails1.Location = new System.Drawing.Point(0, 0);
-            this.uc_Admin_EmployeeDetails1.Name = "uc_Admin_EmployeeDetails1";
-            this.uc_Admin_EmployeeDetails1.Size = new System.Drawing.Size(1464, 834);
-            this.uc_Admin_EmployeeDetails1.TabIndex = 17;
-            // 
-            // uc_Admin_AddEmployee1
-            // 
-            this.uc_Admin_AddEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uc_Admin_AddEmployee1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.uc_Admin_AddEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_Admin_AddEmployee1.Location = new System.Drawing.Point(0, 0);
-            this.uc_Admin_AddEmployee1.Name = "uc_Admin_AddEmployee1";
-            this.uc_Admin_AddEmployee1.Size = new System.Drawing.Size(1464, 834);
-            this.uc_Admin_AddEmployee1.TabIndex = 16;
-            // 
-            // uc_Admin_Dashboard1
-            // 
-            this.uc_Admin_Dashboard1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.uc_Admin_Dashboard1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_Admin_Dashboard1.Location = new System.Drawing.Point(1, 0);
-            this.uc_Admin_Dashboard1.Name = "uc_Admin_Dashboard1";
-            this.uc_Admin_Dashboard1.Size = new System.Drawing.Size(1464, 834);
-            this.uc_Admin_Dashboard1.TabIndex = 20;
-            // 
             // AdminControllerDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -847,7 +815,6 @@ namespace Project_X
         private Guna.UI2.WinForms.Guna2PictureBox logoPicture;
         private Guna.UI2.WinForms.Guna2GradientButton btn_AddEmployee;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2GradientButton btn_settings;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Salary;
         private Guna.UI2.WinForms.Guna2GradientButton btn_EmployeeDetails;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Expense;

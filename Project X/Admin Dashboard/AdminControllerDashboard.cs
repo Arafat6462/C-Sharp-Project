@@ -149,6 +149,7 @@ namespace Project_X
             uc_Admin_EmployeeDetails1.Hide();
             uc_Admin_RemoveEmployee1.Hide();
             uc_Admin_Salary1.Hide();
+            uc_Admin_Dashboard1.Hide();
 
 
             colorThemePanel.Show();

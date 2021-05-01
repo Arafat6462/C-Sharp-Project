@@ -40,6 +40,7 @@ namespace Project_X
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox_Login_as_Admin = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -48,6 +49,7 @@ namespace Project_X
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.checkBox_Login_as_Admin);
             this.panel2.Controls.Add(this.btnExit);
             this.panel2.Controls.Add(this.LoginAsAdmin);
             this.panel2.Controls.Add(this.labelError);
@@ -58,7 +60,7 @@ namespace Project_X
             this.panel2.Controls.Add(this.guna2CirclePictureBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(441, 267);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(955, 459);
             this.panel2.TabIndex = 1;
@@ -74,7 +76,7 @@ namespace Project_X
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
             this.btnExit.Location = new System.Drawing.Point(0, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
@@ -84,10 +86,9 @@ namespace Project_X
             // 
             // LoginAsAdmin
             // 
-            this.LoginAsAdmin.AutoSize = true;
             this.LoginAsAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginAsAdmin.ForeColor = System.Drawing.Color.Gray;
-            this.LoginAsAdmin.Location = new System.Drawing.Point(505, 420);
+            this.LoginAsAdmin.Location = new System.Drawing.Point(25, 413);
             this.LoginAsAdmin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoginAsAdmin.Name = "LoginAsAdmin";
             this.LoginAsAdmin.Size = new System.Drawing.Size(388, 18);
@@ -122,7 +123,7 @@ namespace Project_X
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.Parent = this.btnLogin;
             this.btnLogin.Location = new System.Drawing.Point(561, 308);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
@@ -136,7 +137,7 @@ namespace Project_X
             this.txtPassword.BorderColor = System.Drawing.Color.Gray;
             this.txtPassword.BorderRadius = 18;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "Password";
+            this.txtPassword.DefaultText = "";
             this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -157,7 +158,6 @@ namespace Project_X
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderText = "";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.SelectionStart = 8;
             this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
             this.txtPassword.Size = new System.Drawing.Size(320, 60);
             this.txtPassword.TabIndex = 4;
@@ -168,7 +168,7 @@ namespace Project_X
             this.txtUsername.BorderColor = System.Drawing.Color.Gray;
             this.txtUsername.BorderRadius = 18;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "Username";
+            this.txtUsername.DefaultText = "";
             this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -189,7 +189,6 @@ namespace Project_X
             this.txtUsername.PasswordChar = '\0';
             this.txtUsername.PlaceholderText = "";
             this.txtUsername.SelectedText = "";
-            this.txtUsername.SelectionStart = 8;
             this.txtUsername.ShadowDecoration.Parent = this.txtUsername;
             this.txtUsername.Size = new System.Drawing.Size(320, 60);
             this.txtUsername.TabIndex = 3;
@@ -200,7 +199,7 @@ namespace Project_X
             this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
             this.guna2CirclePictureBox2.Location = new System.Drawing.Point(101, 91);
-            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
@@ -214,7 +213,7 @@ namespace Project_X
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(44, 103);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -234,6 +233,16 @@ namespace Project_X
             this.label1.TabIndex = 0;
             this.label1.Text = "User Login";
             // 
+            // checkBox_Login_as_Admin
+            // 
+            this.checkBox_Login_as_Admin.AutoSize = true;
+            this.checkBox_Login_as_Admin.Location = new System.Drawing.Point(724, 413);
+            this.checkBox_Login_as_Admin.Name = "checkBox_Login_as_Admin";
+            this.checkBox_Login_as_Admin.Size = new System.Drawing.Size(127, 21);
+            this.checkBox_Login_as_Admin.TabIndex = 9;
+            this.checkBox_Login_as_Admin.Text = "Login as Admin";
+            this.checkBox_Login_as_Admin.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -243,7 +252,7 @@ namespace Project_X
             this.ClientSize = new System.Drawing.Size(1707, 886);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -268,6 +277,7 @@ namespace Project_X
         private Guna.UI2.WinForms.Guna2TextBox txtUsername;
         private System.Windows.Forms.Label LoginAsAdmin;
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
+        private System.Windows.Forms.CheckBox checkBox_Login_as_Admin;
     }
 }
 
