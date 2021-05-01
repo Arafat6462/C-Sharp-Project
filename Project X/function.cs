@@ -14,7 +14,7 @@ namespace Project_X
         protected SqlConnection getConnection()
         {
             SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = "data source = DESKTOP-O77F5BP\\SQLEXPRESS;database=myHotel;integrated security = True";
+            connection.ConnectionString = "data source = DESKTOP-3D0MFQ3\\ARAFAT;database=myHotel;integrated security = True";
             return connection;
         }
 

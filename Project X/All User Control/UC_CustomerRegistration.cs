@@ -94,7 +94,7 @@ namespace Project_X.All_User_Control
         int rid;
         private void txtRoomNo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            query = "select price,roomid from roooms where roomNo='" + txtRoomNo.Text + "'";
+            query = "select price,roomid from rooms where roomNo='" + txtRoomNo.Text + "'";
             DataSet ds = fn.getData(query);
             txtPrice.Text = ds.Tables[0].Rows[0][0].ToString();
             rid = int.Parse( ds.Tables[0].Rows[0][1].ToString());        }
@@ -112,7 +112,7 @@ namespace Project_X.All_User_Control
                 string address = txtAddress.Text;
                 string checkin = txtCheckIn.Text;
 
-                query = "insert into customer (cname,mobile,nationality,nationality,gender,dob,idproof,addres,checkin,roomid) values ('"+name+"','"+mobile+"','"+national+ "','" + gender + "','" + dob + "','" + idproof + "','" + address + "','" + checkin + "','"+rid+"') update rooms set booked='YES' where roomNo='"+txtRoomNo.Text+"'";
+                query = "insert into customer (cname,mobile,nationality,gender,dob,idproof,addres,checkin,roomid) values ('"+name+"','"+mobile+"','"+national+ "','" + gender + "','" + dob + "','" + idproof + "','" + address + "','" + checkin + "','"+rid+"') update rooms set booked='YES' where roomNo='"+txtRoomNo.Text+"'";
                 fn.setData(query, "Room No" + txtRoomNo.Text + "Allocation Successful");
                 clearAll();
             }
