@@ -19,7 +19,7 @@ namespace Project_X
        public ArrayList NameList = new ArrayList();
        public ArrayList SalaryList = new ArrayList();
 
-       public int TotalAmount = 500000;
+       public static int TotalAmount = 400000;
 
         /// <summary>
         /// //load data from db to array list

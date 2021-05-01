@@ -221,6 +221,18 @@ namespace Project_X
             uc_Admin_Salary1.Visible = true;
             uc_Admin_Salary1.BringToFront();
         }
+
+
+        // change panel focus
+        private void btn_Dashboard_Click(object sender, EventArgs e)
+        {
+            uc_Admin_Dashboard1.Visible = true;
+            uc_Admin_Dashboard1.BringToFront();
+
+            // refresh all data of dashboard
+            Uc_Admin_Dashboard dashboard = new Uc_Admin_Dashboard();
+            dashboard.LoadAdminDashboardData();
+        }
     }
 }
  

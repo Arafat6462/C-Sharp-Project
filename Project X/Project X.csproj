@@ -108,6 +108,15 @@
     <Compile Include="Admin Dashboard\Uc_Admin_Salary.Designer.cs">
       <DependentUpon>Uc_Admin_Salary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin Dashboard\Uc_Admin_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\Uc_Admin_Dashboard.Designer.cs">
+      <DependentUpon>Uc_Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Dashboard\Uc_Admin_Dashboard.resx">
+      <DependentUpon>Uc_Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin Dashboard\Uc_Admin_RemoveEmployee.resx">
       <DependentUpon>Uc_Admin_RemoveEmployee.cs</DependentUpon>
     </EmbeddedResource>

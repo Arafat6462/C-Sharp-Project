@@ -115,10 +115,10 @@ namespace Project_X
          
         private void btn_PayAll_Click(object sender, EventArgs e)
         {
-            if(dashboard_Salary_Data.TotalAmount >= totalSalary)
+            if(Dashboard_Salary_Data.TotalAmount >= totalSalary)
             {
                   MessageBox.Show("Payment success", "success...!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                dashboard_Salary_Data.TotalAmount -= totalSalary;
+                Dashboard_Salary_Data.TotalAmount -= totalSalary;
             }
             else
             MessageBox.Show("insufficient balance", "Warning...!", MessageBoxButtons.OK, MessageBoxIcon.Warning);

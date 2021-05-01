@@ -64,10 +64,11 @@ namespace Project_X
             this.DefaultTheme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse_Settings = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse_AddEmployee = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uc_Admin_Salary1 = new Project_X.Uc_Admin_Salary();
             this.uc_Admin_RemoveEmployee1 = new Project_X.Uc_Admin_RemoveEmployee();
             this.uc_Admin_EmployeeDetails1 = new Project_X.Uc_Admin_EmployeeDetails();
             this.uc_Admin_AddEmployee1 = new Project_X.Uc_Admin_AddEmployee();
-            this.uc_Admin_Salary1 = new Project_X.Uc_Admin_Salary();
+            this.uc_Admin_Dashboard1 = new Project_X.Uc_Admin_Dashboard();
             this.leftPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
@@ -416,6 +417,7 @@ namespace Project_X
             this.btn_Dashboard.Text = "Dashboard";
             this.btn_Dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Dashboard.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Dashboard.Click += new System.EventHandler(this.btn_Dashboard_Click);
             // 
             // logoPanel
             // 
@@ -549,6 +551,7 @@ namespace Project_X
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.colorThemePanel.BackColor = System.Drawing.Color.Transparent;
+            this.colorThemePanel.Controls.Add(this.uc_Admin_Dashboard1);
             this.colorThemePanel.Controls.Add(this.uc_Admin_Salary1);
             this.colorThemePanel.Controls.Add(this.uc_Admin_RemoveEmployee1);
             this.colorThemePanel.Controls.Add(this.uc_Admin_EmployeeDetails1);
@@ -749,6 +752,17 @@ namespace Project_X
             // 
             this.guna2Elipse_AddEmployee.BorderRadius = 0;
             // 
+            // uc_Admin_Salary1
+            // 
+            this.uc_Admin_Salary1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_Salary1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_Salary1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uc_Admin_Salary1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_Salary1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uc_Admin_Salary1.Name = "uc_Admin_Salary1";
+            this.uc_Admin_Salary1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_Salary1.TabIndex = 19;
+            // 
             // uc_Admin_RemoveEmployee1
             // 
             this.uc_Admin_RemoveEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -785,13 +799,14 @@ namespace Project_X
             this.uc_Admin_AddEmployee1.Size = new System.Drawing.Size(1464, 834);
             this.uc_Admin_AddEmployee1.TabIndex = 16;
             // 
-            // uc_Admin_Salary1
+            // uc_Admin_Dashboard1
             // 
-            this.guna2Transition1.SetDecoration(this.uc_Admin_Salary1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_Admin_Salary1.Location = new System.Drawing.Point(0, 0);
-            this.uc_Admin_Salary1.Name = "uc_Admin_Salary1";
-            this.uc_Admin_Salary1.Size = new System.Drawing.Size(1464, 834);
-            this.uc_Admin_Salary1.TabIndex = 19;
+            this.uc_Admin_Dashboard1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_Dashboard1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_Dashboard1.Location = new System.Drawing.Point(1, 0);
+            this.uc_Admin_Dashboard1.Name = "uc_Admin_Dashboard1";
+            this.uc_Admin_Dashboard1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_Dashboard1.TabIndex = 20;
             // 
             // AdminControllerDashboard
             // 
@@ -861,5 +876,6 @@ namespace Project_X
         private Uc_Admin_EmployeeDetails uc_Admin_EmployeeDetails1;
         private Uc_Admin_RemoveEmployee uc_Admin_RemoveEmployee1;
         private Uc_Admin_Salary uc_Admin_Salary1;
+        private Uc_Admin_Dashboard uc_Admin_Dashboard1;
     }
 }
