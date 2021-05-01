@@ -52,11 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="All User Control\CustomerDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\CustomerDetails.Designer.cs">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_AddRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="All User Control\UC_AddRoom.Designer.cs">
       <DependentUpon>UC_AddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_CustomerRegistration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_CustomerRegistration.Designer.cs">
+      <DependentUpon>UC_CustomerRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin Dashboard\AdminControllerDashboard.cs">
       <SubType>Form</SubType>
@@ -78,8 +90,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="All User Control\CustomerDetails.resx">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Admin Dashboard\Uc_Admin_RemoveEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_AddRoom.resx">
       <DependentUpon>UC_AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_CustomerRegistration.resx">
+      <DependentUpon>UC_CustomerRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Admin Dashboard\Uc_Admin_AddEmployee.cs">
       <SubType>UserControl</SubType>
