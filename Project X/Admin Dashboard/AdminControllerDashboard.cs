@@ -28,9 +28,9 @@ namespace Project_X
         private void sidebarShow_Click(object sender, EventArgs e)
         {
             // reset location and size of bode panel along with side-panel
-            uc_settings1.Location = new Point(243, 60);
+           /* uc_settings1.Location = new Point(243, 60);
             this.uc_settings1.Size = new System.Drawing.Size(uc_settings1.Width - 180, uc_settings1.Height);
-
+*/
             logoPicture.Visible = true;
             sidebarShow.Visible = false;
             sidebarHide.Visible = true;
@@ -43,9 +43,9 @@ namespace Project_X
         private void sidebarHide_Click(object sender, EventArgs e)
         {
             // reset location and size of bode panel along with side-panel
-            uc_settings1.Location = new Point(55, 60);
+            /*uc_settings1.Location = new Point(55, 60);
             this.uc_settings1.Size = new System.Drawing.Size(uc_settings1.Width+180, uc_settings1.Height);
-
+*/
             logoPicture.Visible = false;
             sidebarHide.Visible = false;
             sidebarShow.Visible = true;
@@ -58,8 +58,10 @@ namespace Project_X
         // change theme.
         private void btn_settings_Click(object sender, EventArgs e)
         {
-            colorThemePanel.Hide();
-            uc_settings1.Show();
+            /* colorThemePanel.Hide();
+             uc_settings1.Show();*/
+           /* uc_Admin_AddEmployee1.Show();
+            uc_Admin_AddEmployee1.BringToFront();*/
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -143,8 +145,15 @@ namespace Project_X
 
         private void btn_Theme_Click(object sender, EventArgs e)
         {
+            uc_Admin_AddEmployee1.Hide();
+            uc_Admin_EmployeeDetails1.Hide();
+            uc_Admin_RemoveEmployee1.Hide();
+            uc_Admin_Salary1.Hide();
+
+
             colorThemePanel.Show();
-        }
+            colorThemePanel.BringToFront();
+         }
 
         private void btn_theme_light_Click(object sender, EventArgs e)
         {
@@ -153,7 +162,7 @@ namespace Project_X
 
         private void DefaultTheme_Click(object sender, EventArgs e)
         {
-            ChangeDashboardTheme("#313541", "#6F7C85", "#2C3D4F", "#2C3D4F");
+            ChangeDashboardTheme("#212F3D", "#34495E", "#2C3D4F", "#2C3D4F");
         }
 
         private void btn_theme_purple_Click(object sender, EventArgs e)
@@ -184,6 +193,33 @@ namespace Project_X
         private void btn_theme_yellow_Click(object sender, EventArgs e)
         {
             ChangeDashboardTheme("#D35400", "#F8C471", "#F5B041", "#F5B041");
+        }
+
+
+
+        // add employee
+        private void btn_AddEmployee_Click(object sender, EventArgs e)
+        {
+            uc_Admin_AddEmployee1.Visible = true;
+            uc_Admin_AddEmployee1.BringToFront();
+        }
+
+        private void btn_RemoveEmployee_Click(object sender, EventArgs e)
+        {
+            uc_Admin_RemoveEmployee1.Visible = true;
+            uc_Admin_RemoveEmployee1.BringToFront();
+        }
+
+        private void btn_EmployeeDetails_Click(object sender, EventArgs e)
+        {
+            uc_Admin_EmployeeDetails1.Visible = true;
+            uc_Admin_EmployeeDetails1.BringToFront();
+        }
+
+        private void btn_Salary_Click(object sender, EventArgs e)
+        {
+            uc_Admin_Salary1.Visible = true;
+            uc_Admin_Salary1.BringToFront();
         }
     }
 }

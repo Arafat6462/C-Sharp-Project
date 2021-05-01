@@ -33,18 +33,18 @@ namespace Project_X
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminControllerDashboard));
             Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             this.leftPanel = new System.Windows.Forms.Panel();
-            this.guna2GradientButton8 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_Profit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.sidebarShow = new Guna.UI2.WinForms.Guna2CircleButton();
             this.sidebarHide = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.btn_Theme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_settings = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_Salary = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_EmployeeDetails = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_Expense = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_RemoveEmployee = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_AddEmployee = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_Dashboard = new Guna.UI2.WinForms.Guna2GradientButton();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.logoPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,7 +63,11 @@ namespace Project_X
             this.btn_theme_light = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DefaultTheme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse_Settings = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uc_settings1 = new Project_X.Uc_settings();
+            this.guna2Elipse_AddEmployee = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uc_Admin_RemoveEmployee1 = new Project_X.Uc_Admin_RemoveEmployee();
+            this.uc_Admin_EmployeeDetails1 = new Project_X.Uc_Admin_EmployeeDetails();
+            this.uc_Admin_AddEmployee1 = new Project_X.Uc_Admin_AddEmployee();
+            this.uc_Admin_Salary1 = new Project_X.Uc_Admin_Salary();
             this.leftPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
@@ -76,19 +80,19 @@ namespace Project_X
             // 
             // leftPanel
             // 
-            this.leftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.leftPanel.Controls.Add(this.guna2GradientButton8);
+            this.leftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(47)))), ((int)(((byte)(61)))));
+            this.leftPanel.Controls.Add(this.btn_Profit);
             this.leftPanel.Controls.Add(this.sidebarShow);
             this.leftPanel.Controls.Add(this.sidebarHide);
             this.leftPanel.Controls.Add(this.guna2Separator1);
             this.leftPanel.Controls.Add(this.btn_Theme);
             this.leftPanel.Controls.Add(this.btn_settings);
-            this.leftPanel.Controls.Add(this.guna2GradientButton6);
-            this.leftPanel.Controls.Add(this.guna2GradientButton5);
-            this.leftPanel.Controls.Add(this.guna2GradientButton4);
-            this.leftPanel.Controls.Add(this.guna2GradientButton3);
-            this.leftPanel.Controls.Add(this.guna2GradientButton2);
-            this.leftPanel.Controls.Add(this.guna2GradientButton1);
+            this.leftPanel.Controls.Add(this.btn_Salary);
+            this.leftPanel.Controls.Add(this.btn_EmployeeDetails);
+            this.leftPanel.Controls.Add(this.btn_Expense);
+            this.leftPanel.Controls.Add(this.btn_RemoveEmployee);
+            this.leftPanel.Controls.Add(this.btn_AddEmployee);
+            this.leftPanel.Controls.Add(this.btn_Dashboard);
             this.leftPanel.Controls.Add(this.logoPanel);
             this.guna2Transition1.SetDecoration(this.leftPanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -97,29 +101,33 @@ namespace Project_X
             this.leftPanel.Size = new System.Drawing.Size(243, 894);
             this.leftPanel.TabIndex = 0;
             // 
-            // guna2GradientButton8
+            // btn_Profit
             // 
-            this.guna2GradientButton8.CheckedState.Parent = this.guna2GradientButton8;
-            this.guna2GradientButton8.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton8.CustomImages.Image")));
-            this.guna2GradientButton8.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton8.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton8.CustomImages.Parent = this.guna2GradientButton8;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton8.FillColor = System.Drawing.Color.Empty;
-            this.guna2GradientButton8.FillColor2 = System.Drawing.Color.Empty;
-            this.guna2GradientButton8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton8.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton8.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.guna2GradientButton8.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.guna2GradientButton8.HoverState.Parent = this.guna2GradientButton8;
-            this.guna2GradientButton8.Location = new System.Drawing.Point(3, 477);
-            this.guna2GradientButton8.Name = "guna2GradientButton8";
-            this.guna2GradientButton8.ShadowDecoration.Parent = this.guna2GradientButton8;
-            this.guna2GradientButton8.Size = new System.Drawing.Size(240, 65);
-            this.guna2GradientButton8.TabIndex = 5;
-            this.guna2GradientButton8.Text = "Profit";
-            this.guna2GradientButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton8.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Profit.BorderRadius = 5;
+            this.btn_Profit.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_Profit.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_Profit.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
+            this.btn_Profit.CheckedState.Parent = this.btn_Profit;
+            this.btn_Profit.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_Profit.CustomImages.Image")));
+            this.btn_Profit.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Profit.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_Profit.CustomImages.Parent = this.btn_Profit;
+            this.guna2Transition1.SetDecoration(this.btn_Profit, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Profit.FillColor = System.Drawing.Color.Empty;
+            this.btn_Profit.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_Profit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Profit.ForeColor = System.Drawing.Color.White;
+            this.btn_Profit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_Profit.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_Profit.HoverState.Parent = this.btn_Profit;
+            this.btn_Profit.Location = new System.Drawing.Point(3, 477);
+            this.btn_Profit.Name = "btn_Profit";
+            this.btn_Profit.ShadowDecoration.Parent = this.btn_Profit;
+            this.btn_Profit.Size = new System.Drawing.Size(240, 65);
+            this.btn_Profit.TabIndex = 5;
+            this.btn_Profit.Text = "Profit";
+            this.btn_Profit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Profit.TextOffset = new System.Drawing.Point(40, 0);
             // 
             // sidebarShow
             // 
@@ -136,7 +144,7 @@ namespace Project_X
             this.sidebarShow.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.sidebarShow.HoverState.Parent = this.sidebarShow;
             this.sidebarShow.Image = ((System.Drawing.Image)(resources.GetObject("sidebarShow.Image")));
-            this.sidebarShow.Location = new System.Drawing.Point(28, 544);
+            this.sidebarShow.Location = new System.Drawing.Point(3, 543);
             this.sidebarShow.Name = "sidebarShow";
             this.sidebarShow.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.sidebarShow.ShadowDecoration.Parent = this.sidebarShow;
@@ -180,6 +188,10 @@ namespace Project_X
             // btn_Theme
             // 
             this.btn_Theme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_Theme.BorderRadius = 5;
+            this.btn_Theme.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_Theme.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_Theme.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
             this.btn_Theme.CheckedState.Parent = this.btn_Theme;
             this.btn_Theme.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_Theme.CustomImages.Image")));
             this.btn_Theme.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -206,6 +218,10 @@ namespace Project_X
             // btn_settings
             // 
             this.btn_settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_settings.BorderRadius = 5;
+            this.btn_settings.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_settings.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_settings.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
             this.btn_settings.CheckedState.Parent = this.btn_settings;
             this.btn_settings.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_settings.CustomImages.Image")));
             this.btn_settings.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -229,149 +245,177 @@ namespace Project_X
             this.btn_settings.TextOffset = new System.Drawing.Point(40, 0);
             this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
-            // guna2GradientButton6
+            // btn_Salary
             // 
-            this.guna2GradientButton6.CheckedState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton6.CustomImages.Image")));
-            this.guna2GradientButton6.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton6.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton6.CustomImages.Parent = this.guna2GradientButton6;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton6.FillColor = System.Drawing.Color.Empty;
-            this.guna2GradientButton6.FillColor2 = System.Drawing.Color.Empty;
-            this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton6.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton6.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.guna2GradientButton6.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.guna2GradientButton6.HoverState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Location = new System.Drawing.Point(3, 406);
-            this.guna2GradientButton6.Name = "guna2GradientButton6";
-            this.guna2GradientButton6.ShadowDecoration.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Size = new System.Drawing.Size(240, 65);
-            this.guna2GradientButton6.TabIndex = 3;
-            this.guna2GradientButton6.Text = "Salary";
-            this.guna2GradientButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton6.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Salary.BorderRadius = 5;
+            this.btn_Salary.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_Salary.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_Salary.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
+            this.btn_Salary.CheckedState.Parent = this.btn_Salary;
+            this.btn_Salary.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salary.CustomImages.Image")));
+            this.btn_Salary.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Salary.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_Salary.CustomImages.Parent = this.btn_Salary;
+            this.guna2Transition1.SetDecoration(this.btn_Salary, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Salary.FillColor = System.Drawing.Color.Empty;
+            this.btn_Salary.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_Salary.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salary.ForeColor = System.Drawing.Color.White;
+            this.btn_Salary.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_Salary.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_Salary.HoverState.Parent = this.btn_Salary;
+            this.btn_Salary.Location = new System.Drawing.Point(3, 411);
+            this.btn_Salary.Name = "btn_Salary";
+            this.btn_Salary.ShadowDecoration.Parent = this.btn_Salary;
+            this.btn_Salary.Size = new System.Drawing.Size(240, 65);
+            this.btn_Salary.TabIndex = 3;
+            this.btn_Salary.Text = "Salary";
+            this.btn_Salary.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Salary.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Salary.Click += new System.EventHandler(this.btn_Salary_Click);
             // 
-            // guna2GradientButton5
+            // btn_EmployeeDetails
             // 
-            this.guna2GradientButton5.CheckedState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton5.CustomImages.Image")));
-            this.guna2GradientButton5.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton5.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton5.CustomImages.Parent = this.guna2GradientButton5;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton5.FillColor = System.Drawing.Color.Empty;
-            this.guna2GradientButton5.FillColor2 = System.Drawing.Color.Empty;
-            this.guna2GradientButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton5.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.guna2GradientButton5.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.guna2GradientButton5.HoverState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(3, 341);
-            this.guna2GradientButton5.Name = "guna2GradientButton5";
-            this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Size = new System.Drawing.Size(240, 65);
-            this.guna2GradientButton5.TabIndex = 3;
-            this.guna2GradientButton5.Text = "Statistics";
-            this.guna2GradientButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton5.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_EmployeeDetails.BorderRadius = 5;
+            this.btn_EmployeeDetails.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_EmployeeDetails.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_EmployeeDetails.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
+            this.btn_EmployeeDetails.CheckedState.Parent = this.btn_EmployeeDetails;
+            this.btn_EmployeeDetails.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_EmployeeDetails.CustomImages.Image")));
+            this.btn_EmployeeDetails.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_EmployeeDetails.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_EmployeeDetails.CustomImages.Parent = this.btn_EmployeeDetails;
+            this.guna2Transition1.SetDecoration(this.btn_EmployeeDetails, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_EmployeeDetails.FillColor = System.Drawing.Color.Empty;
+            this.btn_EmployeeDetails.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_EmployeeDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EmployeeDetails.ForeColor = System.Drawing.Color.White;
+            this.btn_EmployeeDetails.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_EmployeeDetails.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_EmployeeDetails.HoverState.Parent = this.btn_EmployeeDetails;
+            this.btn_EmployeeDetails.Location = new System.Drawing.Point(3, 279);
+            this.btn_EmployeeDetails.Name = "btn_EmployeeDetails";
+            this.btn_EmployeeDetails.ShadowDecoration.Parent = this.btn_EmployeeDetails;
+            this.btn_EmployeeDetails.Size = new System.Drawing.Size(240, 65);
+            this.btn_EmployeeDetails.TabIndex = 3;
+            this.btn_EmployeeDetails.Text = "Employee Details";
+            this.btn_EmployeeDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_EmployeeDetails.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_EmployeeDetails.Click += new System.EventHandler(this.btn_EmployeeDetails_Click);
             // 
-            // guna2GradientButton4
+            // btn_Expense
             // 
-            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton4.CustomImages.Image")));
-            this.guna2GradientButton4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton4.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.Empty;
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Empty;
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.guna2GradientButton4.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(3, 276);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Size = new System.Drawing.Size(240, 65);
-            this.guna2GradientButton4.TabIndex = 3;
-            this.guna2GradientButton4.Text = "Expesese";
-            this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton4.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Expense.BorderRadius = 5;
+            this.btn_Expense.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_Expense.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_Expense.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
+            this.btn_Expense.CheckedState.Parent = this.btn_Expense;
+            this.btn_Expense.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_Expense.CustomImages.Image")));
+            this.btn_Expense.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Expense.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_Expense.CustomImages.Parent = this.btn_Expense;
+            this.guna2Transition1.SetDecoration(this.btn_Expense, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Expense.FillColor = System.Drawing.Color.Empty;
+            this.btn_Expense.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_Expense.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Expense.ForeColor = System.Drawing.Color.White;
+            this.btn_Expense.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_Expense.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_Expense.HoverState.Parent = this.btn_Expense;
+            this.btn_Expense.Location = new System.Drawing.Point(3, 345);
+            this.btn_Expense.Name = "btn_Expense";
+            this.btn_Expense.ShadowDecoration.Parent = this.btn_Expense;
+            this.btn_Expense.Size = new System.Drawing.Size(240, 65);
+            this.btn_Expense.TabIndex = 3;
+            this.btn_Expense.Text = "Expense";
+            this.btn_Expense.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Expense.TextOffset = new System.Drawing.Point(40, 0);
             // 
-            // guna2GradientButton3
+            // btn_RemoveEmployee
             // 
-            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton3.CustomImages.Image")));
-            this.guna2GradientButton3.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton3.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Empty;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Empty;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.guna2GradientButton3.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(3, 211);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Size = new System.Drawing.Size(240, 65);
-            this.guna2GradientButton3.TabIndex = 3;
-            this.guna2GradientButton3.Text = "Remove Employee";
-            this.guna2GradientButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton3.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_RemoveEmployee.BorderRadius = 5;
+            this.btn_RemoveEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_RemoveEmployee.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_RemoveEmployee.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
+            this.btn_RemoveEmployee.CheckedState.Parent = this.btn_RemoveEmployee;
+            this.btn_RemoveEmployee.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_RemoveEmployee.CustomImages.Image")));
+            this.btn_RemoveEmployee.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_RemoveEmployee.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_RemoveEmployee.CustomImages.Parent = this.btn_RemoveEmployee;
+            this.guna2Transition1.SetDecoration(this.btn_RemoveEmployee, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_RemoveEmployee.FillColor = System.Drawing.Color.Empty;
+            this.btn_RemoveEmployee.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_RemoveEmployee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RemoveEmployee.ForeColor = System.Drawing.Color.White;
+            this.btn_RemoveEmployee.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_RemoveEmployee.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_RemoveEmployee.HoverState.Parent = this.btn_RemoveEmployee;
+            this.btn_RemoveEmployee.Location = new System.Drawing.Point(3, 213);
+            this.btn_RemoveEmployee.Name = "btn_RemoveEmployee";
+            this.btn_RemoveEmployee.ShadowDecoration.Parent = this.btn_RemoveEmployee;
+            this.btn_RemoveEmployee.Size = new System.Drawing.Size(240, 65);
+            this.btn_RemoveEmployee.TabIndex = 3;
+            this.btn_RemoveEmployee.Text = "Remove Employee";
+            this.btn_RemoveEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_RemoveEmployee.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_RemoveEmployee.Click += new System.EventHandler(this.btn_RemoveEmployee_Click);
             // 
-            // guna2GradientButton2
+            // btn_AddEmployee
             // 
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton2.CustomImages.Image")));
-            this.guna2GradientButton2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton2.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.Empty;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Empty;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(3, 146);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(240, 65);
-            this.guna2GradientButton2.TabIndex = 3;
-            this.guna2GradientButton2.Text = "Add Employee";
-            this.guna2GradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton2.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_AddEmployee.BorderRadius = 5;
+            this.btn_AddEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_AddEmployee.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_AddEmployee.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
+            this.btn_AddEmployee.CheckedState.Parent = this.btn_AddEmployee;
+            this.btn_AddEmployee.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddEmployee.CustomImages.Image")));
+            this.btn_AddEmployee.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_AddEmployee.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_AddEmployee.CustomImages.Parent = this.btn_AddEmployee;
+            this.guna2Transition1.SetDecoration(this.btn_AddEmployee, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_AddEmployee.FillColor = System.Drawing.Color.Empty;
+            this.btn_AddEmployee.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_AddEmployee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddEmployee.ForeColor = System.Drawing.Color.White;
+            this.btn_AddEmployee.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_AddEmployee.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_AddEmployee.HoverState.Parent = this.btn_AddEmployee;
+            this.btn_AddEmployee.Location = new System.Drawing.Point(3, 147);
+            this.btn_AddEmployee.Name = "btn_AddEmployee";
+            this.btn_AddEmployee.ShadowDecoration.Parent = this.btn_AddEmployee;
+            this.btn_AddEmployee.Size = new System.Drawing.Size(240, 65);
+            this.btn_AddEmployee.TabIndex = 3;
+            this.btn_AddEmployee.Text = "Add Employee";
+            this.btn_AddEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_AddEmployee.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_AddEmployee.Click += new System.EventHandler(this.btn_AddEmployee_Click);
             // 
-            // guna2GradientButton1
+            // btn_Dashboard
             // 
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton1.CustomImages.Image")));
-            this.guna2GradientButton1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton1.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Empty;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Empty;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
-            this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(3, 81);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(240, 65);
-            this.guna2GradientButton1.TabIndex = 3;
-            this.guna2GradientButton1.Text = "Dashboard";
-            this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton1.TextOffset = new System.Drawing.Point(40, 0);
+            this.btn_Dashboard.BorderRadius = 5;
+            this.btn_Dashboard.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_Dashboard.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
+            this.btn_Dashboard.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(216)))), ((int)(((byte)(250)))));
+            this.btn_Dashboard.CheckedState.Parent = this.btn_Dashboard;
+            this.btn_Dashboard.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("btn_Dashboard.CustomImages.Image")));
+            this.btn_Dashboard.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Dashboard.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_Dashboard.CustomImages.Parent = this.btn_Dashboard;
+            this.guna2Transition1.SetDecoration(this.btn_Dashboard, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btn_Dashboard.FillColor = System.Drawing.Color.Empty;
+            this.btn_Dashboard.FillColor2 = System.Drawing.Color.Empty;
+            this.btn_Dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Dashboard.ForeColor = System.Drawing.Color.White;
+            this.btn_Dashboard.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(62)))), ((int)(((byte)(103)))));
+            this.btn_Dashboard.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.btn_Dashboard.HoverState.Parent = this.btn_Dashboard;
+            this.btn_Dashboard.Location = new System.Drawing.Point(3, 81);
+            this.btn_Dashboard.Name = "btn_Dashboard";
+            this.btn_Dashboard.ShadowDecoration.Parent = this.btn_Dashboard;
+            this.btn_Dashboard.Size = new System.Drawing.Size(240, 65);
+            this.btn_Dashboard.TabIndex = 3;
+            this.btn_Dashboard.Text = "Dashboard";
+            this.btn_Dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Dashboard.TextOffset = new System.Drawing.Point(40, 0);
             // 
             // logoPanel
             // 
@@ -505,6 +549,10 @@ namespace Project_X
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.colorThemePanel.BackColor = System.Drawing.Color.Transparent;
+            this.colorThemePanel.Controls.Add(this.uc_Admin_Salary1);
+            this.colorThemePanel.Controls.Add(this.uc_Admin_RemoveEmployee1);
+            this.colorThemePanel.Controls.Add(this.uc_Admin_EmployeeDetails1);
+            this.colorThemePanel.Controls.Add(this.uc_Admin_AddEmployee1);
             this.colorThemePanel.Controls.Add(this.btn_theme_green);
             this.colorThemePanel.Controls.Add(this.btn_theme_red);
             this.colorThemePanel.Controls.Add(this.btn_theme_purple);
@@ -521,6 +569,7 @@ namespace Project_X
             // 
             // btn_theme_green
             // 
+            this.btn_theme_green.Animated = true;
             this.btn_theme_green.BorderRadius = 15;
             this.btn_theme_green.BorderThickness = 1;
             this.btn_theme_green.CheckedState.Parent = this.btn_theme_green;
@@ -541,6 +590,7 @@ namespace Project_X
             // 
             // btn_theme_red
             // 
+            this.btn_theme_red.Animated = true;
             this.btn_theme_red.BorderColor = System.Drawing.Color.Red;
             this.btn_theme_red.BorderRadius = 15;
             this.btn_theme_red.BorderThickness = 1;
@@ -562,6 +612,7 @@ namespace Project_X
             // 
             // btn_theme_purple
             // 
+            this.btn_theme_purple.Animated = true;
             this.btn_theme_purple.BorderColor = System.Drawing.Color.Purple;
             this.btn_theme_purple.BorderRadius = 15;
             this.btn_theme_purple.BorderThickness = 1;
@@ -583,6 +634,7 @@ namespace Project_X
             // 
             // btn_theme_gray
             // 
+            this.btn_theme_gray.Animated = true;
             this.btn_theme_gray.BorderColor = System.Drawing.Color.White;
             this.btn_theme_gray.BorderRadius = 15;
             this.btn_theme_gray.BorderThickness = 1;
@@ -604,6 +656,7 @@ namespace Project_X
             // 
             // btn_theme_blue
             // 
+            this.btn_theme_blue.Animated = true;
             this.btn_theme_blue.BorderColor = System.Drawing.Color.Cyan;
             this.btn_theme_blue.BorderRadius = 15;
             this.btn_theme_blue.BorderThickness = 1;
@@ -625,6 +678,7 @@ namespace Project_X
             // 
             // btn_theme_yellow
             // 
+            this.btn_theme_yellow.Animated = true;
             this.btn_theme_yellow.BorderColor = System.Drawing.Color.Orange;
             this.btn_theme_yellow.BorderRadius = 15;
             this.btn_theme_yellow.BorderThickness = 1;
@@ -646,6 +700,7 @@ namespace Project_X
             // 
             // btn_theme_light
             // 
+            this.btn_theme_light.Animated = true;
             this.btn_theme_light.BorderColor = System.Drawing.Color.Pink;
             this.btn_theme_light.BorderRadius = 15;
             this.btn_theme_light.BorderThickness = 1;
@@ -667,6 +722,7 @@ namespace Project_X
             // 
             // DefaultTheme
             // 
+            this.DefaultTheme.Animated = true;
             this.DefaultTheme.BorderRadius = 15;
             this.DefaultTheme.BorderThickness = 1;
             this.DefaultTheme.CheckedState.Parent = this.DefaultTheme;
@@ -689,27 +745,62 @@ namespace Project_X
             // 
             this.guna2Elipse_Settings.BorderRadius = 0;
             // 
-            // uc_settings1
+            // guna2Elipse_AddEmployee
             // 
-            this.uc_settings1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.guna2Elipse_AddEmployee.BorderRadius = 0;
+            // 
+            // uc_Admin_RemoveEmployee1
+            // 
+            this.uc_Admin_RemoveEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.uc_settings1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.uc_settings1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uc_settings1.Location = new System.Drawing.Point(243, 60);
-            this.uc_settings1.Name = "uc_settings1";
-            this.uc_settings1.Size = new System.Drawing.Size(1464, 834);
-            this.uc_settings1.TabIndex = 2;
+            this.uc_Admin_RemoveEmployee1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_RemoveEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_RemoveEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_RemoveEmployee1.Name = "uc_Admin_RemoveEmployee1";
+            this.uc_Admin_RemoveEmployee1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_RemoveEmployee1.TabIndex = 18;
+            // 
+            // uc_Admin_EmployeeDetails1
+            // 
+            this.uc_Admin_EmployeeDetails1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_EmployeeDetails1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_EmployeeDetails1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_EmployeeDetails1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_EmployeeDetails1.Name = "uc_Admin_EmployeeDetails1";
+            this.uc_Admin_EmployeeDetails1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_EmployeeDetails1.TabIndex = 17;
+            // 
+            // uc_Admin_AddEmployee1
+            // 
+            this.uc_Admin_AddEmployee1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uc_Admin_AddEmployee1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.uc_Admin_AddEmployee1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_AddEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_AddEmployee1.Name = "uc_Admin_AddEmployee1";
+            this.uc_Admin_AddEmployee1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_AddEmployee1.TabIndex = 16;
+            // 
+            // uc_Admin_Salary1
+            // 
+            this.guna2Transition1.SetDecoration(this.uc_Admin_Salary1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uc_Admin_Salary1.Location = new System.Drawing.Point(0, 0);
+            this.uc_Admin_Salary1.Name = "uc_Admin_Salary1";
+            this.uc_Admin_Salary1.Size = new System.Drawing.Size(1464, 834);
+            this.uc_Admin_Salary1.TabIndex = 19;
             // 
             // AdminControllerDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(124)))), ((int)(((byte)(133)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.ClientSize = new System.Drawing.Size(1707, 894);
             this.Controls.Add(this.colorThemePanel);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.leftPanel);
-            this.Controls.Add(this.uc_settings1);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -737,19 +828,19 @@ namespace Project_X
         private System.Windows.Forms.Panel logoPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel topPanel;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Dashboard;
         private Guna.UI2.WinForms.Guna2PictureBox logoPicture;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_AddEmployee;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2GradientButton btn_settings;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Salary;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_EmployeeDetails;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Expense;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_RemoveEmployee;
         private Guna.UI2.WinForms.Guna2CircleButton sidebarHide;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
         private Guna.UI2.WinForms.Guna2CircleButton sidebarShow;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton8;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Profit;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse_Settings;
         private Guna.UI2.WinForms.Guna2CirclePictureBox btn_maximize;
         private Guna.UI2.WinForms.Guna2CirclePictureBox btn_minimize;
@@ -765,5 +856,10 @@ namespace Project_X
         private Guna.UI2.WinForms.Guna2GradientButton btn_theme_purple;
         private Guna.UI2.WinForms.Guna2GradientButton btn_theme_green;
         private Guna.UI2.WinForms.Guna2GradientButton btn_theme_red;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse_AddEmployee;
+        private Uc_Admin_AddEmployee uc_Admin_AddEmployee1;
+        private Uc_Admin_EmployeeDetails uc_Admin_EmployeeDetails1;
+        private Uc_Admin_RemoveEmployee uc_Admin_RemoveEmployee1;
+        private Uc_Admin_Salary uc_Admin_Salary1;
     }
 }
