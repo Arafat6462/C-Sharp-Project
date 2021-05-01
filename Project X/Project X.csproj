@@ -93,6 +93,12 @@
     <Compile Include="function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uc_CustomerCheckout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_CustomerCheckout.Designer.cs">
+      <DependentUpon>Uc_CustomerCheckout.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="All User Control\CustomerDetails.resx">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin Dashboard\Uc_settings.resx">
       <DependentUpon>Uc_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc_CustomerCheckout.resx">
+      <DependentUpon>Uc_CustomerCheckout.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

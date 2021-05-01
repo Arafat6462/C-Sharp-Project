@@ -43,7 +43,8 @@ namespace Project_X
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            uc_CustomerCheckout1.Visible = true;
+            uc_CustomerCheckout1.BringToFront();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e) //customer details button

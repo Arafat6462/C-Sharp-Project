@@ -38,6 +38,8 @@ namespace Project_X
             this.btnCustomerRegistration = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uc_CustomerCheckout1 = new Project_X.Uc_CustomerCheckout();
+            this.customerDetails1 = new Project_X.All_User_Control.CustomerDetails();
             this.uC_CustomerRegistration1 = new Project_X.All_User_Control.UC_CustomerRegistration();
             this.uC_AddRoom1 = new Project_X.All_User_Control.UC_AddRoom();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -45,7 +47,7 @@ namespace Project_X
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.customerDetails1 = new Project_X.All_User_Control.CustomerDetails();
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,9 +61,10 @@ namespace Project_X
             this.panel1.Controls.Add(this.btnCheckOut);
             this.panel1.Controls.Add(this.btnCustomerRegistration);
             this.panel1.Controls.Add(this.btnAddRoom);
-            this.panel1.Location = new System.Drawing.Point(76, 12);
+            this.panel1.Location = new System.Drawing.Point(101, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1221, 130);
+            this.panel1.Size = new System.Drawing.Size(1627, 160);
             this.panel1.TabIndex = 0;
             // 
             // btnEmployee
@@ -80,10 +83,11 @@ namespace Project_X
             this.btnEmployee.HoverState.Parent = this.btnEmployee;
             this.btnEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployee.Image")));
             this.btnEmployee.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnEmployee.Location = new System.Drawing.Point(968, 16);
+            this.btnEmployee.Location = new System.Drawing.Point(1291, 20);
+            this.btnEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.ShadowDecoration.Parent = this.btnEmployee;
-            this.btnEmployee.Size = new System.Drawing.Size(220, 99);
+            this.btnEmployee.Size = new System.Drawing.Size(293, 122);
             this.btnEmployee.TabIndex = 4;
             this.btnEmployee.Text = "Employee";
             this.btnEmployee.Click += new System.EventHandler(this.guna2Button5_Click);
@@ -104,10 +108,11 @@ namespace Project_X
             this.btnCustomerDetails.HoverState.Parent = this.btnCustomerDetails;
             this.btnCustomerDetails.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomerDetails.Image")));
             this.btnCustomerDetails.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCustomerDetails.Location = new System.Drawing.Point(729, 16);
+            this.btnCustomerDetails.Location = new System.Drawing.Point(972, 20);
+            this.btnCustomerDetails.Margin = new System.Windows.Forms.Padding(4);
             this.btnCustomerDetails.Name = "btnCustomerDetails";
             this.btnCustomerDetails.ShadowDecoration.Parent = this.btnCustomerDetails;
-            this.btnCustomerDetails.Size = new System.Drawing.Size(220, 99);
+            this.btnCustomerDetails.Size = new System.Drawing.Size(293, 122);
             this.btnCustomerDetails.TabIndex = 3;
             this.btnCustomerDetails.Text = "Customer Details";
             this.btnCustomerDetails.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -128,10 +133,11 @@ namespace Project_X
             this.btnCheckOut.HoverState.Parent = this.btnCheckOut;
             this.btnCheckOut.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckOut.Image")));
             this.btnCheckOut.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnCheckOut.Location = new System.Drawing.Point(491, 16);
+            this.btnCheckOut.Location = new System.Drawing.Point(655, 20);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.ShadowDecoration.Parent = this.btnCheckOut;
-            this.btnCheckOut.Size = new System.Drawing.Size(220, 99);
+            this.btnCheckOut.Size = new System.Drawing.Size(293, 122);
             this.btnCheckOut.TabIndex = 2;
             this.btnCheckOut.Text = "Check Out";
             this.btnCheckOut.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -152,10 +158,11 @@ namespace Project_X
             this.btnCustomerRegistration.HoverState.Parent = this.btnCustomerRegistration;
             this.btnCustomerRegistration.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomerRegistration.Image")));
             this.btnCustomerRegistration.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnCustomerRegistration.Location = new System.Drawing.Point(254, 16);
+            this.btnCustomerRegistration.Location = new System.Drawing.Point(339, 20);
+            this.btnCustomerRegistration.Margin = new System.Windows.Forms.Padding(4);
             this.btnCustomerRegistration.Name = "btnCustomerRegistration";
             this.btnCustomerRegistration.ShadowDecoration.Parent = this.btnCustomerRegistration;
-            this.btnCustomerRegistration.Size = new System.Drawing.Size(220, 99);
+            this.btnCustomerRegistration.Size = new System.Drawing.Size(293, 122);
             this.btnCustomerRegistration.TabIndex = 1;
             this.btnCustomerRegistration.Text = "Customer Registration";
             this.btnCustomerRegistration.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -176,10 +183,11 @@ namespace Project_X
             this.btnAddRoom.HoverState.Parent = this.btnAddRoom;
             this.btnAddRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnAddRoom.Image")));
             this.btnAddRoom.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnAddRoom.Location = new System.Drawing.Point(16, 16);
+            this.btnAddRoom.Location = new System.Drawing.Point(21, 20);
+            this.btnAddRoom.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddRoom.Name = "btnAddRoom";
             this.btnAddRoom.ShadowDecoration.Parent = this.btnAddRoom;
-            this.btnAddRoom.Size = new System.Drawing.Size(220, 99);
+            this.btnAddRoom.Size = new System.Drawing.Size(293, 122);
             this.btnAddRoom.TabIndex = 0;
             this.btnAddRoom.Text = "Add Room";
             this.btnAddRoom.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -191,21 +199,41 @@ namespace Project_X
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.uc_CustomerCheckout1);
             this.panel2.Controls.Add(this.customerDetails1);
             this.panel2.Controls.Add(this.uC_CustomerRegistration1);
             this.panel2.Controls.Add(this.uC_AddRoom1);
-            this.panel2.Location = new System.Drawing.Point(56, 188);
+            this.panel2.Location = new System.Drawing.Point(75, 231);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1106, 520);
+            this.panel2.Size = new System.Drawing.Size(1473, 639);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // uc_CustomerCheckout1
+            // 
+            this.uc_CustomerCheckout1.BackColor = System.Drawing.Color.White;
+            this.uc_CustomerCheckout1.Location = new System.Drawing.Point(-2, -3);
+            this.uc_CustomerCheckout1.Name = "uc_CustomerCheckout1";
+            this.uc_CustomerCheckout1.Size = new System.Drawing.Size(1597, 640);
+            this.uc_CustomerCheckout1.TabIndex = 3;
+            // 
+            // customerDetails1
+            // 
+            this.customerDetails1.BackColor = System.Drawing.Color.White;
+            this.customerDetails1.Location = new System.Drawing.Point(-3, 5);
+            this.customerDetails1.Margin = new System.Windows.Forms.Padding(5);
+            this.customerDetails1.Name = "customerDetails1";
+            this.customerDetails1.Size = new System.Drawing.Size(1789, 718);
+            this.customerDetails1.TabIndex = 2;
             // 
             // uC_CustomerRegistration1
             // 
             this.uC_CustomerRegistration1.BackColor = System.Drawing.Color.White;
-            this.uC_CustomerRegistration1.Location = new System.Drawing.Point(-2, -2);
+            this.uC_CustomerRegistration1.Location = new System.Drawing.Point(-3, -2);
+            this.uC_CustomerRegistration1.Margin = new System.Windows.Forms.Padding(5);
             this.uC_CustomerRegistration1.Name = "uC_CustomerRegistration1";
-            this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1271, 520);
+            this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1695, 640);
             this.uC_CustomerRegistration1.TabIndex = 1;
             // 
             // uC_AddRoom1
@@ -214,9 +242,10 @@ namespace Project_X
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
-            this.uC_AddRoom1.Location = new System.Drawing.Point(-2, -2);
+            this.uC_AddRoom1.Location = new System.Drawing.Point(-3, -2);
+            this.uC_AddRoom1.Margin = new System.Windows.Forms.Padding(5);
             this.uC_AddRoom1.Name = "uC_AddRoom1";
-            this.uC_AddRoom1.Size = new System.Drawing.Size(1106, 520);
+            this.uC_AddRoom1.Size = new System.Drawing.Size(1475, 640);
             this.uC_AddRoom1.TabIndex = 0;
             this.uC_AddRoom1.Visible = false;
             // 
@@ -232,10 +261,11 @@ namespace Project_X
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
             this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
-            this.btnExit.Size = new System.Drawing.Size(45, 45);
+            this.btnExit.Size = new System.Drawing.Size(60, 55);
             this.btnExit.TabIndex = 9;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -250,11 +280,12 @@ namespace Project_X
             this.btnMinimize.HoverState.Parent = this.btnMinimize;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
             this.btnMinimize.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMinimize.Location = new System.Drawing.Point(0, 45);
+            this.btnMinimize.Location = new System.Drawing.Point(0, 55);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnMinimize.ShadowDecoration.Parent = this.btnMinimize;
-            this.btnMinimize.Size = new System.Drawing.Size(45, 45);
+            this.btnMinimize.Size = new System.Drawing.Size(60, 55);
             this.btnMinimize.TabIndex = 10;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
@@ -273,26 +304,24 @@ namespace Project_X
             this.guna2Elipse3.BorderRadius = 30;
             this.guna2Elipse3.TargetControl = this;
             // 
-            // customerDetails1
+            // guna2Elipse4
             // 
-            this.customerDetails1.BackColor = System.Drawing.Color.White;
-            this.customerDetails1.Location = new System.Drawing.Point(-2, 4);
-            this.customerDetails1.Name = "customerDetails1";
-            this.customerDetails1.Size = new System.Drawing.Size(1342, 583);
-            this.customerDetails1.TabIndex = 2;
+            this.guna2Elipse4.BorderRadius = 30;
+            this.guna2Elipse4.TargetControl = this;
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1208, 720);
+            this.ClientSize = new System.Drawing.Size(1611, 886);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
@@ -321,5 +350,7 @@ namespace Project_X
         private All_User_Control.UC_CustomerRegistration uC_CustomerRegistration1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private All_User_Control.CustomerDetails customerDetails1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Uc_CustomerCheckout uc_CustomerCheckout1;
     }
 }
