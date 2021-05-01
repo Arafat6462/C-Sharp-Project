@@ -30,6 +30,9 @@ namespace Project_X
         private void Dashboard_Load(object sender, EventArgs e)
         {
             uC_CustomerRegistration1.Visible = false;
+            customerDetails1.Visible = false;
+            uC_AddRoom1.BringToFront();
+            uC_AddRoom1.Visible = true;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
