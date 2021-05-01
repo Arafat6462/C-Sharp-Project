@@ -38,7 +38,6 @@ namespace Project_X
             this.btnCustomerRegistration = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uc_CustomerCheckout1 = new Project_X.Uc_CustomerCheckout();
             this.customerDetails1 = new Project_X.All_User_Control.CustomerDetails();
             this.uC_CustomerRegistration1 = new Project_X.All_User_Control.UC_CustomerRegistration();
             this.uC_AddRoom1 = new Project_X.All_User_Control.UC_AddRoom();
@@ -48,6 +47,7 @@ namespace Project_X
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uc_CustomerCheckout1 = new Project_X.Uc_CustomerCheckout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -210,14 +210,6 @@ namespace Project_X
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // uc_CustomerCheckout1
-            // 
-            this.uc_CustomerCheckout1.BackColor = System.Drawing.Color.White;
-            this.uc_CustomerCheckout1.Location = new System.Drawing.Point(-2, -3);
-            this.uc_CustomerCheckout1.Name = "uc_CustomerCheckout1";
-            this.uc_CustomerCheckout1.Size = new System.Drawing.Size(1597, 640);
-            this.uc_CustomerCheckout1.TabIndex = 3;
-            // 
             // customerDetails1
             // 
             this.customerDetails1.BackColor = System.Drawing.Color.White;
@@ -233,7 +225,7 @@ namespace Project_X
             this.uC_CustomerRegistration1.Location = new System.Drawing.Point(-3, -2);
             this.uC_CustomerRegistration1.Margin = new System.Windows.Forms.Padding(5);
             this.uC_CustomerRegistration1.Name = "uC_CustomerRegistration1";
-            this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1695, 640);
+            this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1789, 718);
             this.uC_CustomerRegistration1.TabIndex = 1;
             // 
             // uC_AddRoom1
@@ -245,7 +237,7 @@ namespace Project_X
             this.uC_AddRoom1.Location = new System.Drawing.Point(-3, -2);
             this.uC_AddRoom1.Margin = new System.Windows.Forms.Padding(5);
             this.uC_AddRoom1.Name = "uC_AddRoom1";
-            this.uC_AddRoom1.Size = new System.Drawing.Size(1475, 640);
+            this.uC_AddRoom1.Size = new System.Drawing.Size(1789, 718);
             this.uC_AddRoom1.TabIndex = 0;
             this.uC_AddRoom1.Visible = false;
             // 
@@ -308,6 +300,14 @@ namespace Project_X
             // 
             this.guna2Elipse4.BorderRadius = 30;
             this.guna2Elipse4.TargetControl = this;
+            // 
+            // uc_CustomerCheckout1
+            // 
+            this.uc_CustomerCheckout1.BackColor = System.Drawing.Color.White;
+            this.uc_CustomerCheckout1.Location = new System.Drawing.Point(-2, -2);
+            this.uc_CustomerCheckout1.Name = "uc_CustomerCheckout1";
+            this.uc_CustomerCheckout1.Size = new System.Drawing.Size(1789, 718);
+            this.uc_CustomerCheckout1.TabIndex = 3;
             // 
             // Dashboard
             // 
