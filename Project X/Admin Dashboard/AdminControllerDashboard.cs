@@ -148,7 +148,7 @@ namespace Project_X
             uc_Admin_AddEmployee1.Hide();
             uc_Admin_EmployeeDetails1.Hide();
             uc_Admin_RemoveEmployee1.Hide();
-            colorThemePanel.Hide();
+            uc_Admin_Salary1.Hide();
 
 
             colorThemePanel.Show();

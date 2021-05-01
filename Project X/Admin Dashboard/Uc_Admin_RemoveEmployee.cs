@@ -30,7 +30,7 @@ namespace Project_X
 
         private void Uc_Admin_RemoveEmployee_Load(object sender, EventArgs e)
         {
-            loadData();
+            loadData();   
         }
 
         private void btn_DeleteEmployee_Click(object sender, EventArgs e)

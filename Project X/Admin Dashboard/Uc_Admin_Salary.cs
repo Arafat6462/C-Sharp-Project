@@ -19,12 +19,14 @@ namespace Project_X
 
 
 
+        Dashboard_Salary_Data dashboard_Salary_Data = new Dashboard_Salary_Data();
 
         int Top = 100;
         int Left = 40;
         int Count = 0;
+        int totalSalary = 0; // all salary
 
-        void PaymentButton(int Left, int Top)
+        void StatusButton(int Left, int Top)
         {
             /*Button button = new Button();
             this.Controls.Add(button);*/
@@ -67,38 +69,28 @@ namespace Project_X
 
 
         }
+
+        // place all input
+        void AllInputDesign(int Left, int Top, string text)
+        {
+            Label label2 = new Label();
+            this.Controls.Add(label2);
+
+            // label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.Transparent;
+            label2.Location = new System.Drawing.Point(Left, Top);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label_Dynamic";
+            label2.Size = new System.Drawing.Size(160, 40);
+            label2.TabIndex = 1;
+            label2.Text = text;
+            label2.ForeColor = Color.White;
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+        }
         private void btn_Creat_lable_Click(object sender, EventArgs e)
         {
-            void Design(int Left, int Top)
-            {
-                Label label2 = new Label();
-                this.Controls.Add(label2);
-
-                label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-                label2.Location = new System.Drawing.Point(Left, Top);
-                label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-                label2.Name = "label_Dynamic";
-                label2.Size = new System.Drawing.Size(160, 40);
-                label2.TabIndex = 1;
-                label2.Text = "New Lableff";
-                label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
-            }
-
            
-
-            Count++;
-            for (int i = 0; i <5; i++)
-            {
-                Design(Left, Top);
-                Design(332, Top);
-                Design(624, Top);
-                Design(916, Top);
-                
-
-                Top += 50;
-                Count--;
-            }
         }
 
         private void btn_Pay_Click(object sender, EventArgs e)
@@ -109,11 +101,47 @@ namespace Project_X
         private void btn_SelectAll_Click(object sender, EventArgs e)
         {
             Top = 100;
-            for (int i = 0; i < 5; i++)
+          
+            for (int i = 0; i <dashboard_Salary_Data.IDList.Count; i++)
             {
-                PaymentButton(1208, Top);
+                StatusButton(1165, Top);
                 Top += 50;
+                totalSalary +=Convert.ToInt32(dashboard_Salary_Data.SalaryList[i]);
+                txt_Total_salary.Text = "Total Salary : "+totalSalary.ToString();
              }
+        }
+
+      
+         
+        private void btn_PayAll_Click(object sender, EventArgs e)
+        {
+            if(dashboard_Salary_Data.TotalAmount >= totalSalary)
+            {
+                  MessageBox.Show("Payment success", "success...!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dashboard_Salary_Data.TotalAmount -= totalSalary;
+            }
+            else
+            MessageBox.Show("insufficient balance", "Warning...!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+ 
+        }
+
+        private void Uc_Admin_Salary_Load(object sender, EventArgs e)
+        {
+            dashboard_Salary_Data.loadDAtaToArrayList(); // parse all data
+            for (int i = 0; i <dashboard_Salary_Data.IDList.Count; i++)
+            {
+                AllInputDesign(Left, Top, dashboard_Salary_Data.IDList[i].ToString());
+                AllInputDesign(415, Top, dashboard_Salary_Data.NameList[i].ToString());
+                AllInputDesign(790, Top, dashboard_Salary_Data.SalaryList[i].ToString());
+
+
+                Top += 50;
+            }
+        }
+
+        private void txt_Total_salary_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
